@@ -1,0 +1,31 @@
+src/
+├── main.ts
+├── app.module.ts
+├── config/
+│   └── database.config.ts
+├── common/
+│   ├── decorators/
+│   ├── filters/
+│   └── interfaces/
+├── modules/
+│   ├── cafes/
+│   │   ├── cafes.module.ts
+│   │   ├── cafes.controller.ts
+│   │   ├── cafes.service.ts
+│   │   ├── dto/
+│   │   │   ├── create-cafe.dto.ts
+│   │   │   ├── update-cafe.dto.ts
+│   │   │   └── filter-cafe.dto.ts
+│   │   ├── entities/
+│   │   │   ├── cafe.entity.ts
+│   │   │   └── drink.entity.ts
+│   │   └── repositories/
+│   │       └── cafes.repository.ts
+│   └── search/
+│       ├── search.module.ts
+│       ├── search.controller.ts
+│       └── search.service.ts
+└── test/
+    └── cafes/
+        ├── cafes.controller.spec.ts
+        └── cafes.service.spec.ts
