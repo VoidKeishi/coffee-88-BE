@@ -2,9 +2,9 @@ FROM ubuntu:jammy
 
 ENV TZ=Asia/Ho_Chi_Minh
 
-# Update package list
+# Update package list and install some basic tools
 RUN apt-get update && apt-get upgrade -y && \
-    apt-get install -y curl wget && \
+    apt-get install -y curl wget sudo && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -16,6 +16,11 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | b
     npm i -g @nestjs/cli 
     # npm i -D @types/multer 
     # npm install archiver
+
+# Install postgresql
+RUN apt-get update && apt-get install -y postgresql postgresql-contrib && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Install Zsh
 RUN apt-get update && apt-get install -y zsh && \
