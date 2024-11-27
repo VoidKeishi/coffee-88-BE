@@ -17,7 +17,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Cafe'
+                  $ref: '#/components/schemas/CafeDtoWithoutDrinks'
   /cafes/detail/{id}:
     get:
       summary: Get cafe details
@@ -35,10 +35,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Cafe'
+                $ref: '#/components/schemas/CafeDto'
 components:
   schemas:
-    Cafe:
+    CafeDto:
       type: object
       properties:
         id:
@@ -77,9 +77,70 @@ components:
         distance_from_sun:
           type: number
           format: float
-        created_at:
+        drinks:
+          type: array
+          items:
+            $ref: '#/components/schemas/Drink'
+    CafeDtoWithoutDrinks:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
           type: string
-          format: date-time
-        updated_at:
+        address:
           type: string
-          format: date-time
+        image_urls:
+          type: array
+          items:
+            type: string
+        price_range:
+          type: string
+          enum:
+            - low
+            - medium
+            - high
+        style:
+          type: string
+          enum:
+            - modern
+            - traditional
+            - vintage
+            - outdoor
+            - workspace
+        google_rating:
+          type: number
+          format: float
+        opening_time:
+          type: string
+          format: time
+        closing_time:
+          type: string
+          format: time
+        distance_from_sun:
+          type: number
+          format: float
+    Drink:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        type:
+          type: string
+          enum:
+            - coffee
+            - tea
+            - smoothie
+            - juice
+            - other
+        price:
+          type: number
+          format: float
+        description:
+          type: string
+        image_url:
+          type: string
+        is_available:
+          type: boolean

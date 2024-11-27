@@ -4,43 +4,43 @@ import { PRICE_RANGE, CAFE_STYLE } from './enums';
 
 @Entity('cafes')
 export class Cafe {
-    @PrimaryGeneratedColumn()
-    id: number;
+  @PrimaryGeneratedColumn()
+  id: number;
 
-    @Column({ length: 100 })
-    name: string;
+  @Column({ length: 100 })
+  name: string;
 
-    @Column('text')
-    address: string;
+  @Column('text')
+  address: string;
 
-    @Column('text', { array: true })
-    image_urls: string[];
+  @Column('text', { array: true, name: 'imageUrls' })
+  image_urls: string[];
 
-    @Column({ type: 'enum', enum: PRICE_RANGE })
-    price_range: PRICE_RANGE;
+  @Column({ type: 'enum', enum: PRICE_RANGE, name: 'priceRange' })
+  price_range: PRICE_RANGE;
 
-    @Column({ type: 'enum', enum: CAFE_STYLE })
-    style: CAFE_STYLE;
+  @Column({ type: 'enum', enum: CAFE_STYLE })
+  style: CAFE_STYLE;
 
-    @Column({ type: 'decimal', precision: 2, scale: 1 })
-    google_rating: number;
+  @Column({ type: 'decimal', precision: 2, scale: 1, name: 'googleRating' })
+  google_rating: number;
 
-    @Column('time')
-    opening_time: string;
+  @Column('time', { name: 'openingTime' })
+  opening_time: string;
 
-    @Column('time')
-    closing_time: string;
+  @Column('time', { name: 'closingTime' })
+  closing_time: string;
 
-    @Index()
-    @Column({ type: 'decimal', precision: 5, scale: 2 })
-    distance_from_sun: number;
+  @Index('idx_distanceFromSun')
+  @Column({ type: 'decimal', precision: 5, scale: 2, name: 'distanceFromSun' })
+  distance_from_sun: number;
 
-    @CreateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
-    created_at: Date;
+  @CreateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+  created_at: Date;
 
-    @UpdateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
-    updated_at: Date;
+  @UpdateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+  updated_at: Date;
 
-    @OneToMany(() => Drink, drink => drink.cafe)
-    drinks: Drink[];
+  @OneToMany(() => Drink, drink => drink.cafe)
+  drinks: Drink[];
 }

@@ -1,49 +1,4 @@
--- Enums
-CREATE TYPE price_range AS ENUM ('low', 'medium', 'high');
-CREATE TYPE cafe_style AS ENUM ('modern', 'traditional', 'vintage', 'outdoor', 'workspace');
-CREATE TYPE drink_type AS ENUM ('coffee', 'tea', 'smoothie', 'juice', 'other');
-
--- Table cafes
-CREATE TABLE cafes (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    address TEXT NOT NULL,
-    image_urls TEXT[], -- Array of image URLs
-    price_range price_range NOT NULL,
-    style cafe_style NOT NULL,
-    google_rating DECIMAL(2,1) CHECK (google_rating >= 0 AND google_rating <= 5), -- 0-5 rating
-    opening_time TIME NOT NULL,
-    closing_time TIME NOT NULL,
-    distance_from_sun DECIMAL(5,2) NOT NULL, -- Distance in kilometers
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- Indexes for cafes
-CREATE INDEX idx_distance_from_sun ON cafes(distance_from_sun);
-CREATE INDEX idx_price_range ON cafes(price_range);
-
--- Table drinks
-CREATE TABLE drinks (
-    id SERIAL PRIMARY KEY,
-    cafe_id INTEGER NOT NULL REFERENCES cafes(id) ON DELETE CASCADE, -- Foreign key to cafes
-    name VARCHAR(100) NOT NULL,
-    type drink_type NOT NULL,
-    price DECIMAL(10,2) NOT NULL CHECK (price > 0), -- Must be > 0
-    description TEXT,
-    image_url TEXT,
-    is_available BOOLEAN DEFAULT TRUE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- Indexes for drinks
-CREATE INDEX idx_cafe_id ON drinks(cafe_id);
-CREATE INDEX idx_type ON drinks(type);
-
-
--- Insert quán cà phê
-INSERT INTO cafes (name, address, image_urls, price_range, style, google_rating, opening_time, closing_time, distance_from_sun) VALUES
+INSERT INTO "cafes" ("name", "address", "imageUrls", "priceRange", "style", "googleRating", "openingTime", "closingTime", "distanceFromSun") VALUES
 ('Secret Garden Cafe', 
  'Lô 39 (TT4) đường đỗ đình thiện Khu đô thị mới Mỹ Đình - Mễ Trì, P. Mỹ Đình 1, Nam Từ Liêm, 100000, Việt Nam', 
  '{"https://res.cloudinary.com/ddfbcat7h/image/upload/v1732721496/Picture4_plm7af.png"}', 
@@ -99,7 +54,7 @@ INSERT INTO cafes (name, address, image_urls, price_range, style, google_rating,
  '{"https://res.cloudinary.com/ddfbcat7h/image/upload/v1732721496/Picture14_h9hrqx.png"}', 
  'low', 'workspace', 4.6, '09:00', '23:30', 3.6);
 
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
+INSERT INTO drinks ("cafeId", "name", "type", "price") VALUES
 (1, 'ESPRESSO', 'coffee', 50000),
 (1, 'AMERICANO', 'coffee', 50000),
 (1, 'COFFEE LATTE', 'coffee', 65000),
@@ -128,7 +83,7 @@ INSERT INTO drinks (cafe_id, name, type, price) VALUES
 (1, 'LEMON SHAKE', 'smoothie', 65000);
 
 
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
+INSERT INTO drinks ("cafeId", "name", "type", "price") VALUES
 (2, 'Americano', 'coffee', 60000),
 (2, 'Latte', 'coffee', 70000),
 (2, 'Flat White', 'coffee', 75000),
@@ -155,7 +110,7 @@ INSERT INTO drinks (cafe_id, name, type, price) VALUES
 
 
 
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
+INSERT INTO drinks ("cafeId", "name", "type", "price") VALUES
 (3, 'Cà phê đen nóng/ đá pha máy', 'coffee', 40000),
 (3, 'Cà phê cốt dừa', 'coffee', 55000),
 (3, 'Cà phê trứng nướng', 'coffee', 60000),
@@ -194,7 +149,7 @@ INSERT INTO drinks (cafe_id, name, type, price) VALUES
 
 
 
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
+INSERT INTO drinks ("cafeId", "name", "type", "price") VALUES
 (4, 'Cà phê cốt dừa', 'coffee', 40000),
 (4, 'Cafe muối', 'coffee', 35000),
 (4, 'Bạc xỉu', 'coffee', 35000),
@@ -227,7 +182,7 @@ INSERT INTO drinks (cafe_id, name, type, price) VALUES
 
 
 -- Quán Vinh Cafe (id = 5)
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
+INSERT INTO drinks ("cafeId", "name", "type", "price") VALUES
 (5, 'Cà phê đen nóng/ đá', 'coffee', 25000),
 (5, 'Nâu nóng/ đá', 'coffee', 25000),
 (5, 'Bạc xỉu', 'coffee', 35000),
@@ -256,7 +211,7 @@ INSERT INTO drinks (cafe_id, name, type, price) VALUES
 (5, 'Sinh tố sữa chua', 'smoothie', 45000);
 
 -- Quán Cafe Sài Gòn (id = 6)
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
+INSERT INTO drinks ("cafeId", "name", "type", "price") VALUES
 (6, 'Cafe đen', 'coffee', 30000),
 (6, 'Cafe sữa', 'coffee', 28000),
 (6, 'Bạc xỉu', 'coffee', 35000),
@@ -285,7 +240,7 @@ INSERT INTO drinks (cafe_id, name, type, price) VALUES
 (6, 'Dâu tầm sữa chua', 'smoothie', 50000);
 
 -- Quán Café de Măng Đen Nguyễn Chánh (id = 7)
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
+INSERT INTO drinks ("cafeId", "name", "type", "price") VALUES
 (7, 'Americano', 'coffee', 50000),
 (7, 'Cappuccino', 'coffee', 50000),
 (7, 'Cà phê sữa đặc', 'coffee', 35000),
@@ -312,7 +267,7 @@ INSERT INTO drinks (cafe_id, name, type, price) VALUES
 (7, 'Xoài chanh leo', 'smoothie', 58000);
 
 -- Quán Coffee Quân (id = 8)
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
+INSERT INTO drinks ("cafeId", "name", "type", "price") VALUES
 (8, 'Nâu', 'coffee', 20000),
 (8, 'Đen', 'coffee', 20000),
 (8, 'Nâu/Đen pha phin', 'coffee', 25000),
@@ -337,7 +292,7 @@ INSERT INTO drinks (cafe_id, name, type, price) VALUES
 
 
 -- Quán id 9: Mơ Cà phê
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
+INSERT INTO drinks ("cafeId", "name", "type", "price") VALUES
 (9, 'Phê đen (nóng/đá)', 'coffee', 29000),
 (9, 'Phê nâu (nóng/đá)', 'coffee', 35000),
 (9, 'Phê sữa tươi', 'coffee', 39000),
@@ -356,7 +311,7 @@ INSERT INTO drinks (cafe_id, name, type, price) VALUES
 (9, 'Hướng dương', 'tea', 25000);
 
 -- Quán id 10: La Jolie Café
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
+INSERT INTO drinks ("cafeId", "name", "type", "price") VALUES
 (10, 'Cà phê đen', 'coffee', 35000),
 (10, 'Cà phê nâu', 'coffee', 35000),
 (10, 'Bạc xỉu', 'coffee', 40000),
@@ -376,7 +331,7 @@ INSERT INTO drinks (cafe_id, name, type, price) VALUES
 (10, 'Xoài dừa đá xay', 'smoothie', 55000);
 
 -- Quán id 11: Gosiwon Coffee In Bed
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
+INSERT INTO drinks ("cafeId", "name", "type", "price") VALUES
 (11, 'Cà phê đen', 'coffee', 35000),
 (11, 'Cà phê nâu', 'coffee', 35000),
 (11, 'Bạc xỉu', 'coffee', 40000),

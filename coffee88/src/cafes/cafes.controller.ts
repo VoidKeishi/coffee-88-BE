@@ -1,20 +1,18 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { CafesService } from './cafes.service';
+import { CafeDto } from './dto/cafe.dto';
 
 @Controller('cafes')
 export class CafesController {
   constructor(private readonly cafesService: CafesService) {}
 
-
   @Get()
-  findAll() {
+  findAll(): Promise<CafeDto[]> {
     return this.cafesService.findAll();
   }
 
   @Get('/detail/:id')
-  findOne(@Param('id') id: string) {
+  findOne(@Param('id') id: string): Promise<CafeDto> {
     return this.cafesService.findOne(+id);
   }
-
-
 }
