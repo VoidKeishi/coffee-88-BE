@@ -1,0 +1,59 @@
+Enum price_range {
+    low
+    medium
+    high
+}
+
+Enum cafe_style {
+    modern
+    traditional
+    vintage
+    outdoor
+    workspace
+}
+
+Enum drink_type {
+    coffee
+    tea
+    smoothie
+    juice
+    other
+}
+
+Table cafes {
+    id SERIAL [pk]
+    name VARCHAR(100) [not null]
+    address TEXT [not null]
+    image_urls TEXT[] // Array of image URLs
+    price_range price_range [not null]
+    style cafe_style [not null]
+    google_rating DECIMAL(2,1) [note: '0-5 rating']
+    opening_time TIME [not null]
+    closing_time TIME [not null]
+    distance_from_sun DECIMAL(5,2) [not null, note: 'Distance in kilometers']
+    created_at TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+    updated_at TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+
+    indexes {
+        (distance_from_sun)
+        (price_range)
+    }
+}
+
+Table drinks {
+    id SERIAL [pk]
+    cafe_id INTEGER [ref: > cafes.id, not null, note: 'Foreign key to cafes']
+    name VARCHAR(100) [not null]
+    type drink_type [not null]
+    price DECIMAL(10,2) [not null, note: 'Must be > 0']
+    description TEXT
+    image_url TEXT
+    is_available BOOLEAN [default: `true`]
+    created_at TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+    updated_at TIMESTAMP [default: `CURRENT_TIMESTAMP`]
+
+    indexes {
+        (cafe_id)
+        (type)
+    }
+}

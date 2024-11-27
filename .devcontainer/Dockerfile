@@ -1,10 +1,9 @@
 FROM ubuntu:jammy
 
-ENV TZ=Asia/Ho_Chi_Minh
-
+ENV DEBIAN_FRONTEND=noninteractive TZ=Asia/Ho_Chi_Minh
 # Update package list and install some basic tools
 RUN apt-get update && apt-get upgrade -y && \
-    apt-get install -y curl wget sudo && \
+    apt-get install -y curl wget sudo nano && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -37,3 +36,6 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
     -p git \
     -p https://github.com/zsh-users/zsh-autosuggestions \
     -p https://github.com/zsh-users/zsh-completions
+
+# Start postgresql service
+CMD service postgresql start && tail -f /dev/null
