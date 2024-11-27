@@ -37,5 +37,14 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
     -p https://github.com/zsh-users/zsh-autosuggestions \
     -p https://github.com/zsh-users/zsh-completions
 
+# Copy the setup script
+COPY setup_postgres.sh /usr/local/bin/
+
+# Make the setup script executable
+RUN chmod +x /usr/local/bin/setup_postgres.sh
+
+# Run the setup script
+RUN /usr/local/bin/setup_postgres.sh
+
 # Start postgresql service
 CMD service postgresql start && tail -f /dev/null
