@@ -48,3 +48,4 @@ RUN /usr/local/bin/setup_postgres.sh
 
 # Start postgresql service
 CMD service postgresql start && tail -f /dev/null
+

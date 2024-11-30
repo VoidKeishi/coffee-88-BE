@@ -19,7 +19,8 @@
         "vscode": {
 			"extensions": [
 				"GitHub.copilot",
-				"42crunch.vscode-openapi"
+				"42crunch.vscode-openapi",
+				"ms-azuretools.vscode-docker"
 			]
         }
     }
