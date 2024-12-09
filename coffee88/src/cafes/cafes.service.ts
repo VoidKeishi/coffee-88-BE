@@ -13,7 +13,7 @@ export class CafesService {
 
   async findAll(): Promise<CafeDto[]> {
     const cafes = await this.cafesRepository.find();
-    return cafes.map(cafe => this.toDto(cafe));
+    return cafes.map((cafe) => this.toDto(cafe));
   }
 
   async findOne(id: number): Promise<CafeDto> {
@@ -22,6 +22,16 @@ export class CafesService {
       relations: ['drinks'],
     });
     return this.toDto(cafe);
+  }
+
+  async findRecomenndCafes(): Promise<CafeDto[]> {
+    const recommendCafes = this.cafesRepository
+      .createQueryBuilder()
+      .from(Cafe, 'cafe')
+      .addOrderBy('cafe.googleRating', 'DESC')
+      .limit(4)
+      .execute();
+    return recommendCafes;
   }
 
   private toDto(cafe: Cafe): CafeDto {

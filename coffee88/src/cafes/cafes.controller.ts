@@ -11,6 +11,11 @@ export class CafesController {
     return this.cafesService.findAll();
   }
 
+  @Get('/recommends')
+  findRecomenndCafes() {
+    return this.cafesService.findRecomenndCafes();
+  }
+
   @Get('/detail/:id')
   findOne(@Param('id') id: string): Promise<CafeDto> {
     return this.cafesService.findOne(+id);

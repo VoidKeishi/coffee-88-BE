@@ -2,9 +2,14 @@ import { Module } from '@nestjs/common';
 import { CafesModule } from './cafes/cafes.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [CafesModule,
+  imports: [
+    CafesModule,
+    AuthModule,
+    UsersModule,
     ConfigModule.forRoot({
       isGlobal: true,
       envFilePath: '.env',
@@ -21,9 +26,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         autoLoadEntities: true,
         synchronize: true, // Setting synchronize: true shouldn't be used in production - otherwise you can lose production data.
         extra: {
-          ssl: {
-            rejectUnauthorized: false,
-          },
+          ssl: true,
         },
         retryAttempts: 20,
         retryDelay: 3000,
