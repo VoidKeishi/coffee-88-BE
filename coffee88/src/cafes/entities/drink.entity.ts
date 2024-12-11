@@ -14,7 +14,7 @@ export class Drink {
     @Column({ length: 100 })
     name: string;
 
-    @Column({ type: 'enum', enum: DRINK_TYPE })
+    @Column({ type: 'enum', enum: DRINK_TYPE, enumName: 'drink_type' })
     type: DRINK_TYPE;
 
     @Column({ type: 'decimal', precision: 10, scale: 2 })

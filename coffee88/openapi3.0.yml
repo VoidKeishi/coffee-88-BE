@@ -5,6 +5,59 @@ info:
 servers:
   - url: http://localhost:3000
 paths:
+  /auth/sign-in:
+    post:
+      summary: Sign in
+      operationId: signIn
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SignInDto'
+      responses:
+        '200':
+          description: Successful sign in
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  accessToken:
+                    type: string
+  /auth/sign-up:
+    post:
+      summary: Sign up
+      operationId: signUp
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SignUpDto'
+      responses:
+        '200':
+          description: Successful sign up
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+  /auth/forgot-password:
+    post:
+      summary: Forgot password
+      operationId: forgotPassword
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: string
+      responses:
+        '200':
+          description: Password reset link sent
   /cafes:
     get:
       summary: Get all cafes
@@ -12,6 +65,19 @@ paths:
       responses:
         '200':
           description: A list of cafes
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CafeDtoWithoutDrinks'
+  /cafes/recommends:
+    get:
+      summary: Get recommended cafes
+      operationId: findRecommendedCafes
+      responses:
+        '200':
+          description: A list of recommended cafes
           content:
             application/json:
               schema:
@@ -36,8 +102,37 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CafeDto'
+  /users/preference:
+    post:
+      summary: Create new user preference
+      operationId: createNewUserPreference
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserPreferenceDto'
+      responses:
+        '200':
+          description: User preference created
 components:
   schemas:
+    SignInDto:
+      type: object
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+    SignUpDto:
+      type: object
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+        email:
+          type: string
     CafeDto:
       type: object
       properties:
@@ -144,3 +239,12 @@ components:
           type: string
         is_available:
           type: boolean
+    UserPreferenceDto:
+      type: object
+      properties:
+        userId:
+          type: integer
+        preferences:
+          type: array
+          items:
+            type: string

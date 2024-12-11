@@ -13,26 +13,26 @@ export class Cafe {
   @Column('text')
   address: string;
 
-  @Column('text', { array: true, name: 'imageUrls' })
+  @Column('text', { array: true, name: 'image_urls' })
   image_urls: string[];
 
-  @Column({ type: 'enum', enum: PRICE_RANGE, name: 'priceRange' })
+  @Column({ type: 'enum', enum: PRICE_RANGE, enumName: 'price_range', name: 'price_range' })
   price_range: PRICE_RANGE;
 
-  @Column({ type: 'enum', enum: CAFE_STYLE })
+  @Column({ type: 'enum', enum: CAFE_STYLE, enumName: 'cafe_style' })
   style: CAFE_STYLE;
 
-  @Column({ type: 'decimal', precision: 2, scale: 1, name: 'googleRating' })
+  @Column({ type: 'decimal', precision: 2, scale: 1, name: 'google_rating' })
   google_rating: number;
 
-  @Column('time', { name: 'openingTime' })
+  @Column('time', { name: 'opening_time' })
   opening_time: string;
 
-  @Column('time', { name: 'closingTime' })
+  @Column('time', { name: 'closing_time' })
   closing_time: string;
 
   @Index('idx_distanceFromSun')
-  @Column({ type: 'decimal', precision: 5, scale: 2, name: 'distanceFromSun' })
+  @Column({ type: 'decimal', precision: 5, scale: 2, name: 'distance_from_sun' })
   distance_from_sun: number;
 
   @CreateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })

@@ -25,9 +25,9 @@ import { AuthModule } from './auth/auth.module';
         database: configService.get<string>('DB_NAME'),
         autoLoadEntities: true,
         synchronize: true, // Setting synchronize: true shouldn't be used in production - otherwise you can lose production data.
-        extra: {
-          ssl: true,
-        },
+        // extra: {
+        //   ssl: true,
+        // },
         retryAttempts: 20,
         retryDelay: 3000,
       }),

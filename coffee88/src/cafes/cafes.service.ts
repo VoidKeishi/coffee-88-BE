@@ -28,7 +28,7 @@ export class CafesService {
     const recommendCafes = this.cafesRepository
       .createQueryBuilder()
       .from(Cafe, 'cafe')
-      .addOrderBy('cafe.googleRating', 'DESC')
+      .addOrderBy('cafe.google_rating', 'DESC')
       .limit(4)
       .execute();
     return recommendCafes;
