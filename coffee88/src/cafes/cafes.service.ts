@@ -39,5 +39,16 @@ export class CafesService {
     return dto as CafeDto;
   }
 
-  
+  async search(keyword: string): Promise<CafeDto[]> {
+    const cafes = await this.cafesRepository
+      .createQueryBuilder('cafe')
+      .leftJoinAndSelect('cafe.drinks', 'drink')
+      .where('LOWER(cafe.name) LIKE LOWER(:keyword)', { keyword: `%${keyword}%` })
+      .orWhere('LOWER(drink.name) LIKE LOWER(:keyword)', { keyword: `%${keyword}%` })
+      .distinct(true)
+      .getMany();
+
+    return cafes.map(cafe => this.toDto(cafe));
+  }
+
 }

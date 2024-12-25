@@ -32,6 +32,15 @@ export class UserPreferenceRepository {
     });
   }
 
+  async updateUserPreference(
+    updatedUserPreference: UserPreferenceDto,
+    existingPreference: UserPreferences,
+  ) {
+    existingPreference.personalization = updatedUserPreference.personalization;
+    existingPreference.price_range = updatedUserPreference.priceRange;
+    return await this.userPreferenceRepository.save(existingPreference);
+  }
+
   async getUserFavouriteCafes(user: User) {
     const userPreference = await this.userPreferenceRepository.findOne({
       where: { user: { id: user.id } },
