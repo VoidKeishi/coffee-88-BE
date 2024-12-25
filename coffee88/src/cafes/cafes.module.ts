@@ -12,5 +12,6 @@ import { Drink } from './entities/drink.entity';
     Cafe,
     Drink
   ])],
+  exports: [TypeOrmModule],
 })
 export class CafesModule {}
