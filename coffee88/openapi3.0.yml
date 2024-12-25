@@ -102,6 +102,26 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CafeDto'
+  /cafes/search/{keyword}:
+    get:
+      summary: Search cafes and drinks
+      operationId: searchCafesAndDrinks
+      parameters:
+        - name: keyword
+          in: path
+          required: true
+          schema:
+            type: string
+          description: The search keyword
+      responses:
+        '200':
+          description: A list of cafes matching the search criteria
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CafeDto'
   /users/preference:
     post:
       summary: Create new user preference
@@ -115,6 +135,33 @@ paths:
       responses:
         '200':
           description: User preference created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserPreferenceDto'
+  /users/preference/recommend:
+    post:
+      summary: Get user recommended cafes based on preferences
+      operationId: getUserRecommendCafes
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: integer
+                  description: The ID of the user
+      responses:
+        '200':
+          description: A list of recommended cafes for the user
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CafeDto'
 components:
   schemas:
     SignInDto:
@@ -124,6 +171,9 @@ components:
           type: string
         password:
           type: string
+      required:
+        - email
+        - password
     SignUpDto:
       type: object
       properties:
@@ -133,6 +183,10 @@ components:
           type: string
         email:
           type: string
+      required:
+        - username
+        - password
+        - email
     CafeDto:
       type: object
       properties:
@@ -176,6 +230,16 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Drink'
+      required:
+        - id
+        - name
+        - address
+        - price_range
+        - style
+        - google_rating
+        - opening_time
+        - closing_time
+        - distance_from_sun
     CafeDtoWithoutDrinks:
       type: object
       properties:
@@ -215,6 +279,16 @@ components:
         distance_from_sun:
           type: number
           format: float
+      required:
+        - id
+        - name
+        - address
+        - price_range
+        - style
+        - google_rating
+        - opening_time
+        - closing_time
+        - distance_from_sun
     Drink:
       type: object
       properties:
@@ -239,6 +313,12 @@ components:
           type: string
         is_available:
           type: boolean
+      required:
+        - id
+        - name
+        - type
+        - price
+        - is_available
     UserPreferenceDto:
       type: object
       properties:
@@ -248,3 +328,6 @@ components:
           type: array
           items:
             type: string
+      required:
+        - userId
+        - preferences
