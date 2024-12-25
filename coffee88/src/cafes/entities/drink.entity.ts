@@ -8,6 +8,7 @@ export class Drink {
     id: number;
 
     @ManyToOne(() => Cafe, cafe => cafe.drinks)
+    @JoinColumn({ name: 'cafeid' })
     @Index()
     cafe: Cafe;
 

@@ -26,6 +26,7 @@ export class AuthService {
     return {
       username: foundUser.username,
       email: foundUser.email,
+      id: foundUser.id,
     };
   }
 
@@ -47,6 +48,7 @@ export class AuthService {
     return {
       username: newUser.email,
       email: newUser.username,
+      id: newUser.id,
     };
   }
 
