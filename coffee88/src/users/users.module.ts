@@ -5,7 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './entities/user.entity';
 import { UserPreferences } from './entities/user.preference.entity';
 import { UserRepository } from './repositories/user.repository';
-import { UserPreferenceRepository } from './repositories/user-preference.entity';
+import { UserPreferenceRepository } from './repositories/user-preference.repository';
 
 @Module({
   imports: [TypeOrmModule.forFeature([User, UserPreferences])],

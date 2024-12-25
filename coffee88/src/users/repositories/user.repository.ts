@@ -27,4 +27,12 @@ export class UserRepository {
     const newUser = this.userRepository.create(newUserData)
     return await this.userRepository.save(newUser)
   }
+
+  async updateUserProfile(updatedUserData: { userId: number; newUserData: NewUserDto }): Promise<User> {
+    const foundUser = await this.findUserById(updatedUserData.userId)
+    if (!foundUser) return null
+    const updatedUser = this.userRepository.create({ ...foundUser, ...updatedUserData.newUserData })
+    return await this.userRepository.save(updatedUser)
+  }
+
 }

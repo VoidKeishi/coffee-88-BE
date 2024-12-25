@@ -1,464 +1,390 @@
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(1, 'ESPRESSO', 'coffee', 50000),
-(1, 'AMERICANO', 'coffee', 50000),
-(1, 'COFFEE LATTE', 'coffee', 65000),
-(1, 'CAPUCHINO', 'coffee', 68000),
-(1, 'COCONUT COFFEE', 'coffee', 65000),
-(1, 'CHOCOLATE COFFEE', 'coffee', 68000),
-(1, 'AVOCADO COFFEE', 'coffee', 68000),
-(1, 'DETOX JUICE (CURLY KALE + CARROT + CUCUMBER + APPLE)', 'juice', 79000),
-(1, 'DETOX VITAMIN (CURLY KALE + CARROT + ORANGE + PINEAPPLE)', 'juice', 79000),
-(1, 'JASMINE TEA', 'tea', 60000),
-(1, 'LEMON TEA', 'tea', 60000),
-(1, 'GREEN TEA', 'tea', 60000),
-(1, 'VOI TEA', 'tea', 60000),
-(1, 'GINGER TEA', 'tea', 65000),
-(1, 'COCOA', 'tea', 55000),
-(1, 'PINEAPPLE JUICE', 'juice', 60000),
-(1, 'CARROT JUICE', 'juice', 60000),
-(1, 'WATERMELON JUICE', 'juice', 60000),
-(1, 'ORANGE JUICE', 'juice', 60000),
-(1, 'PASSION FRUIT JUICE', 'juice', 60000),
-(1, 'COCONUT JUICE', 'juice', 60000),
-(1, 'MOJITO', 'juice', 98000),
-(1, 'AVOCADO SHAKE', 'smoothie', 65000),
-(1, 'MANGO SHAKE', 'smoothie', 65000),
-(1, 'BANANA SHAKE', 'smoothie', 65000),
-(1, 'LEMON SHAKE', 'smoothie', 65000);
-
-
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(2, 'Americano', 'coffee', 60000),
-(2, 'Latte', 'coffee', 70000),
-(2, 'Flat White', 'coffee', 75000),
-(2, 'Cappuccino', 'coffee', 80000),
-(2, 'Café Mocha', 'coffee', 80000),
-(2, 'Cloud Mocha', 'coffee', 90000),
-(2, 'Caramel Macchiato', 'coffee', 90000),
-(2, 'Vienna Coffee', 'coffee', 90000),
-(2, 'Matcha Café Latte', 'coffee', 90000),
-(2, 'Cold Brew', 'coffee', 90000),
-(2, 'Cold Brew Latte', 'coffee', 100000),
-(2, 'Cold Brew Einspanner', 'coffee', 110000),
-(2, 'Matcha Latte', 'tea', 70000),
-(2, 'Ssuk Latte', 'tea', 70000),
-(2, 'Black tea Latte', 'tea', 75000),
-(2, 'Cacao Latte', 'tea', 70000),
-(2, 'Lime Snow', 'smoothie', 75000),
-(2, 'Mango', 'smoothie', 75000),
-(2, 'Matcha', 'smoothie', 75000),
-(2, 'Ssuk', 'smoothie', 80000),
-(2, 'Mixed Grains Latte', 'smoothie', 80000),
-(2, 'pineapple Juice', 'juice', 75000),
-(2, 'Lime Juice', 'juice', 70000);
-
-
-
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(3, 'Cà phê đen nóng/ đá pha máy', 'coffee', 40000),
-(3, 'Cà phê cốt dừa', 'coffee', 55000),
-(3, 'Cà phê trứng nướng', 'coffee', 60000),
-(3, 'Caramel muối (Salted caramel)', 'coffee', 70000),
-(3, 'Espresso', 'coffee', 40000),
-(3, 'Latte', 'coffee', 65000),
-(3, 'Cappuccino', 'coffee', 55000),
-(3, 'Guồng kem máy', 'coffee', 80000),
-(3, 'Vanilla latte', 'coffee', 75000),
-(3, 'Ôn đới sữa đặc (Condensed milk latte)', 'coffee', 75000),
-(3, 'Caramel macchiato', 'coffee', 75000),
-(3, 'Americano', 'coffee', 55000),
-(3, 'Trà tắc hồng bì', 'tea', 60000),
-(3, 'Trà đào cam sả', 'tea', 80000),
-(3, 'Trà búp dâm xoài cam', 'tea', 60000),
-(3, 'Trà ô long nhãn hạt dẻ cười', 'tea', 70000),
-(3, 'Trà sữa ô long', 'tea', 70000),
-(3, 'Trà sữa earl grey', 'tea', 50000),
-(3, 'Trà sữa sinh tố bơ', 'tea', 50000),
-(3, 'Trà sữa hạt dẻ cười kem trứng nướng', 'tea', 70000),
-(3, 'Trà lychee hibiscus', 'tea', 50000),
-(3, 'Trà bạc hà', 'tea', 50000),
-(3, 'Trà gừng', 'tea', 70000),
-(3, 'Nước chanh', 'juice', 60000),
-(3, 'Lavie en rose', 'juice', 60000),
-(3, 'Nước ép dứa', 'juice', 60000),
-(3, 'Nước chanh leo', 'juice', 60000),
-(3, 'Nước cam', 'juice', 60000),
-(3, 'Nước dừa dứa nha đam', 'juice', 70000),
-(3, 'Sinh tố bơ sen hạnh nhân', 'smoothie', 50000),
-(3, 'Quất hồng bì tuyết', 'smoothie', 80000),
-(3, 'Sinh tố xoài', 'smoothie', 70000),
-(3, 'Sinh tố bổ', 'smoothie', 70000),
-(3, 'Sinh tố avocado', 'smoothie', 70000),
-(3, 'Sinh tố kim quất', 'smoothie', 70000);
-
-
-
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(4, 'Cà phê cốt dừa', 'coffee', 40000),
-(4, 'Cafe muối', 'coffee', 35000),
-(4, 'Bạc xỉu', 'coffee', 35000),
-(4, 'Cafe nâu đen', 'coffee', 25000),
-(4, 'Cafe Tiramisu', 'coffee', 50000),
-(4, 'Cafe kem trứng', 'coffee', 60000),
-(4, 'Cafe hạnh nhân', 'coffee', 60000),
-(4, 'Trà chanh nhiệt độ', 'tea', 40000),
-(4, 'Trà chanh nhiệt độ đá', 'tea', 40000),
-(4, 'Đào bưởi kem trứng', 'tea', 45000),
-(4, 'Matcha cốt dừa', 'tea', 45000),
-(4, 'Ô long hồng', 'tea', 60000),
-(4, 'Matcha kem cheese', 'tea', 40000),
-(4, 'Sen vàng', 'tea', 40000),
-(4, 'Hồng trà sữa', 'tea', 40000),
-(4, 'Bào ngư cam', 'tea', 35000),
-(4, 'Cam quế', 'tea', 35000),
-(4, 'Đào cam sả', 'tea', 35000),
-(4, 'Cam tươi', 'juice', 45000),
-(4, 'Ổi cóc (Dứa)', 'juice', 45000),
-(4, 'Dứa xiêm', 'juice', 40000),
-(4, 'Cam', 'juice', 40000),
-(4, 'Chanh leo/ Dưa hấu', 'juice', 35000),
-(4, 'Ổi cóc dừa cà rốt', 'juice', 45000),
-(4, 'Bơ', 'smoothie', 55000),
-(4, 'Mango', 'smoothie', 50000),
-(4, 'Việt quất', 'smoothie', 55000);
-
-
-
-
--- Quán Vinh Cafe (id = 5)
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(5, 'Cà phê đen nóng/ đá', 'coffee', 25000),
-(5, 'Nâu nóng/ đá', 'coffee', 25000),
-(5, 'Bạc xỉu', 'coffee', 35000),
-(5, 'Cà phê cốt dừa', 'coffee', 40000),
-(5, 'Cà phê đá xay', 'smoothie', 35000),
-(5, 'Cà phê socola', 'smoothie', 45000),
-(5, 'Cà phê vani', 'smoothie', 40000),
-(5, 'Matcha đá xay', 'smoothie', 45000),
-(5, 'Socola cookies', 'smoothie', 45000),
-(5, 'Cốt dừa hoa đậu biếc', 'smoothie', 45000),
-
-(5, 'Dừa tươi', 'juice', 45000),
-(5, 'Chanh tươi', 'juice', 45000),
-(5, 'Chanh dây', 'juice', 45000),
-(5, 'Cam tươi', 'juice', 45000),
-(5, 'Lựu ép', 'juice', 50000),
-(5, 'Ổi ép', 'juice', 45000),
-(5, 'Bưởi ép', 'juice', 45000),
-(5, 'Táo ép', 'juice', 40000),
-(5, 'Dứa ép', 'juice', 45000),
-(5, 'Nước ép', 'juice', 40000),
-(5, 'Sinh tố bơ', 'smoothie', 40000),
-(5, 'Sinh tố mãng cầu', 'smoothie', 45000),
-(5, 'Sinh tố xoài', 'smoothie', 40000),
-(5, 'Sinh tố chanh leo', 'smoothie', 45000),
-(5, 'Sinh tố sữa chua', 'smoothie', 45000);
-
--- Quán Cafe Sài Gòn (id = 6)
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(6, 'Cafe đen', 'coffee', 30000),
-(6, 'Cafe sữa', 'coffee', 28000),
-(6, 'Bạc xỉu', 'coffee', 35000),
-(6, 'Bạc xỉu Sài Gòn', 'coffee', 35000),
-(6, 'Cafe muối', 'coffee', 35000),
-(6, 'Cafe kem cheese', 'coffee', 35000),
-(6, 'Matcha Latte', 'coffee', 45000),
-(6, 'Cacao', 'coffee', 45000),
-(6, 'Trà chanh hạt đác', 'tea', 35000),
-(6, 'Trà vải', 'tea', 40000),
-(6, 'Trà đào cam sả', 'tea', 45000),
-(6, 'Trà đào chanh dây', 'tea', 45000),
-(6, 'Trà xoài chanh dây', 'tea', 45000),
-(6, 'Trà bưởi hồng T.Long', 'tea', 45000),
-(6, 'Chanh tươi', 'juice', 30000),
-(6, 'Chanh leo', 'juice', 35000),
-(6, 'Dưa hấu', 'juice', 35000),
-(6, 'Chanh dây', 'juice', 40000),
-(6, 'Cam ép', 'juice', 40000),
-(6, 'Thơm', 'juice', 35000),
-(6, 'Táo', 'juice', 35000),
-(6, 'Bơ', 'smoothie', 45000),
-(6, 'Mãng cầu', 'smoothie', 45000),
-(6, 'Xoài', 'smoothie', 45000),
-(6, 'Mix (2 loại)', 'smoothie', 50000),
-(6, 'Dâu tầm sữa chua', 'smoothie', 50000);
-
--- Quán Café de Măng Đen Nguyễn Chánh (id = 7)
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(7, 'Americano', 'coffee', 50000),
-(7, 'Cappuccino', 'coffee', 50000),
-(7, 'Cà phê sữa đặc', 'coffee', 35000),
-(7, 'Cà phê sữa đá muối', 'coffee', 35000),
-(7, 'Cà phê đen đá', 'coffee', 30000),
-(7, 'Bạc xỉu', 'coffee', 45000),
-(7, 'Cà phê cốt dừa', 'coffee', 50000),
-(7, 'Cà phê sữa đá mang đen', 'coffee', 40000),
-(7, 'Trà đào cam sả', 'tea', 45000),
-(7, 'Trà xoài chanh leo', 'tea', 45000),
-(7, 'Trà bưởi hồng', 'tea', 45000),
-(7, 'Trà gừng', 'tea', 35000),
-(7, 'Trà tắc', 'tea', 35000),
-(7, 'Cam nguyên chất', 'juice', 50000),
-(7, 'Chanh dây', 'juice', 45000),
-(7, 'Dưa hấu', 'juice', 45000),
-(7, 'Cam chanh dây', 'juice', 50000),
-(7, 'Cam cà rốt', 'juice', 50000),
-(7, 'Bơ', 'smoothie', 50000),
-(7, 'Xoài', 'smoothie', 50000),
-(7, 'Dâu', 'smoothie', 50000),
-(7, 'Kem dâu sữa chua', 'smoothie', 58000),
-(7, 'Kem chuối sữa chua', 'smoothie', 58000),
-(7, 'Xoài chanh leo', 'smoothie', 58000);
-
--- Quán Coffee Quân (id = 8)
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(8, 'Nâu', 'coffee', 20000),
-(8, 'Đen', 'coffee', 20000),
-(8, 'Nâu/Đen pha phin', 'coffee', 25000),
-(8, 'Bạc xỉu', 'coffee', 20000),
-(8, 'Cacao', 'coffee', 25000),
-(8, 'Cacao cốt dừa', 'coffee', 30000),
-(8, 'Cafe cốt dừa', 'coffee', 30000),
-(8, 'Sữa chua đá', 'smoothie', 20000),
-(8, 'Sữa chua cacao', 'smoothie', 25000),
-(8, 'Sữa chua chanh leo', 'smoothie', 25000),
-(8, 'Hộp sữa chua', 'smoothie', 15000),
-(8, 'Trà gừng mật ong', 'tea', 20000),
-(8, 'Trà đào', 'tea', 25000),
-(8, 'Trà chanh sả/đào sả/quất sả', 'tea', 25000),
-(8, 'Trà đào cam sả', 'tea', 30000),
-(8, 'Trà đào chanh leo', 'tea', 30000),
-(8, 'Trà táo bạc hà', 'tea', 35000),
-(8, 'Trà táo quế', 'tea', 35000),
-(8, 'Trà cam quế mật ong', 'tea', 30000),
-(8, 'Trà dưa hấu nha đam', 'tea', 30000);
-
-
-
--- Quán id 9: Mơ Cà phê
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(9, 'Phê đen (nóng/đá)', 'coffee', 29000),
-(9, 'Phê nâu (nóng/đá)', 'coffee', 35000),
-(9, 'Phê sữa tươi', 'coffee', 39000),
-(9, 'Phê kem', 'coffee', 39000),
-(9, 'Phê kem muối', 'coffee', 39000),
-(9, 'Sữa chua là nếp', 'smoothie', 45000),
-(9, 'Sữa chua cà phê', 'smoothie', 45000),
-(9, 'Sữa chua cacao', 'smoothie', 45000),
-(9, 'Sữa chua coco', 'smoothie', 45000),
-(9, 'Quất mật', 'tea', 45000),
-(9, 'Nho dứa', 'tea', 45000),
-(9, 'Dâu rừng hoa hồng', 'tea', 49000),
-(9, 'Bưởi hồng cánh sen', 'tea', 49000),
-(9, 'Ôlong sữa', 'tea', 49000),
-(9, 'Ôlong bơ sữa', 'tea', 55000),
-(9, 'Hướng dương', 'tea', 25000);
-
--- Quán id 10: La Jolie Café
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(10, 'Cà phê đen', 'coffee', 35000),
-(10, 'Cà phê nâu', 'coffee', 35000),
-(10, 'Bạc xỉu', 'coffee', 40000),
-(10, 'La Jolie Café', 'coffee', 55000),
-(10, 'Cà phê cốt dừa', 'coffee', 45000),
-(10, 'Latte', 'coffee', 55000),
-(10, 'Trà thạch đào', 'tea', 55000),
-(10, 'Trà dâu dứa', 'tea', 60000),
-(10, 'La Jolie Tea', 'tea', 60000),
-(10, 'Trà ổi hồng', 'tea', 60000),
-(10, 'Trà xoài dứa', 'tea', 60000),
-(10, 'Nước ép cam', 'juice', 55000),
-(10, 'Nước ép dứa', 'juice', 55000),
-(10, 'Nước ép dưa hấu', 'juice', 55000),
-(10, 'Matcha đá xay', 'smoothie', 55000),
-(10, 'Chococookies đá xay', 'smoothie', 55000),
-(10, 'Xoài dừa đá xay', 'smoothie', 55000);
-
--- Quán id 11: Gosiwon Coffee In Bed
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(11, 'Cà phê đen', 'coffee', 35000),
-(11, 'Cà phê nâu', 'coffee', 35000),
-(11, 'Bạc xỉu', 'coffee', 40000),
-(11, 'Cà phê cốt dừa', 'coffee', 45000),
-(11, 'Trà Ô long', 'tea', 35000),
-(11, 'Trà Nhài Táo Xanh', 'tea', 35000),
-(11, 'Trà Sen Vang Sả', 'tea', 35000),
-(11, 'Ô long Dứa Lưới', 'tea', 35000),
-(11, 'Trà Đào Cam Sả Nóng', 'tea', 40000),
-(11, 'Trà Đào Chanh Leo Nóng', 'tea', 40000),
-(11, 'Chanh leo', 'smoothie', 35000),
-(11, 'Cam Táo', 'smoothie', 35000),
-(11, 'Dứa Ổi', 'smoothie', 35000),
-(11, 'Sinh tố Bơ', 'smoothie', 40000),
-(11, 'Sinh tố Bơ Xoài', 'smoothie', 40000),
-(11, 'Sinh tố Xoài Hạnh Nhân', 'smoothie', 40000);
-
-
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(12, 'Cà phê đen', 'coffee', 30000),
-(12, 'Cà phê nâu', 'coffee', 30000),
-(12, 'Sô cô la', 'coffee', 30000),
-(12, 'Ca cao', 'coffee', 30000),
-
-(12, 'Trà sữa các vị', 'tea', 30000),
-(12, 'Trà các vị', 'tea', 30000),
-(12, 'Trà cam quế', 'tea', 30000),
-(12, 'Trà cúc sả', 'tea', 30000),
-(12, 'Trà cam gừng', 'tea', 30000),
-(12, 'Trà ô long vải', 'tea', 30000),
-
-(12, 'Chanh tươi', 'juice', 30000),
-(12, 'Chanh leo', 'juice', 30000),
-(12, 'Cam chanh dây', 'juice', 30000);
-
-
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(13, 'Nâu (nóng, đá)', 'coffee', 20000),
-(13, 'Đen (nóng, đá)', 'coffee', 20000),
-(13, 'Bạc xỉu', 'coffee', 20000),
-(13, 'Lipton dâu', 'tea', 20000),
-(13, 'Lipton đào', 'tea', 20000),
-(13, 'Lipton bạc hà', 'tea', 20000),
-(13, 'Trà thái', 'tea', 20000),
-(13, 'Trà gừng', 'tea', 20000),
-(13, 'Mơ muối', 'tea', 20000),
-(13, 'Sinh tố bơ', 'smoothie', 35000),
-(13, 'Sinh tố xoài', 'smoothie', 30000),
-(13, 'Sinh tố mãng cầu', 'smoothie', 35000),
-(13, 'Sinh tố dưa hấu', 'smoothie', 30000),
-(13, 'Chanh tươi', 'juice', 30000),
-(13, 'Chanh leo', 'juice', 30000);
-
-
-
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(14, 'Trà xoài', 'tea', 35000),
-(14, 'Trà đào cam sả', 'tea', 35000),
-(14, 'Trà đào sữa', 'tea', 35000),
-(14, 'Trà táo bạc hà', 'tea', 35000),
-(14, 'Trà dưa hấu', 'tea', 35000),
-(14, 'Trà gừng', 'tea', 25000),
-(14, 'Trà quế (ly)', 'tea', 25000),
-(14, 'Nước chanh tươi', 'juice', 25000),
-(14, 'Nước ép dứa', 'juice', 30000),
-(14, 'Nước chanh leo', 'juice', 30000),
-(14, 'Nước dưa hấu', 'juice', 30000),
-(14, 'Nước ép cam', 'juice', 25000),
-(14, 'Nước ép cà rốt', 'juice', 35000),
-(14, 'Nước ép táo', 'juice', 35000);
-
-
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(15, 'Đen Hà Nội', 'coffee', 33000),
-(15, 'Short Black (Espresso)', 'coffee', 44000),
-(15, 'Long Black (Americano)', 'coffee', 44000),
-(15, 'Đen phin truyền thống', 'coffee', 55000),
-(15, 'Coldbrew', 'coffee', 55000),
-(15, 'V60', 'coffee', 66000),
-(15, 'Cappuccino', 'coffee', 55000),
-(15, 'Trà bá tước', 'tea', 33000),
-(15, 'Trà hoa cúc mật ong nóng', 'tea', 44000),
-(15, 'Trà Hibiscus', 'tea', 55000),
-(15, 'Trà Cascara', 'tea', 55000),
-(15, 'Trà xoài lạc tiên', 'tea', 66000),
-(15, 'Trà mận dâu chanh vàng', 'tea', 66000),
-(15, 'Matcha Latte', 'tea', 66000),
-(15, 'Ép cam', 'juice', 55000);
-
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(16, 'Đen', 'coffee', 39000),
-(16, 'Nâu', 'coffee', 39000),
-(16, 'Bạc xỉu', 'coffee', 41000),
-(16, 'Sữa đá Sài Gòn', 'coffee', 41000),
-(16, 'Nâu kem', 'coffee', 49000),
-(16, 'Vina-Cano', 'coffee', 45000),
-(16, 'Vina-Cappuccino', 'coffee', 55000),
-(16, 'Nâu phố', 'coffee', 45000),
-(16, 'Bạc xỉu phố', 'coffee', 55000),
-(16, 'Cà phê phố kem kem', 'coffee', 55000),
-(16, 'Trà bá tước', 'tea', 45000),
-(16, 'Tắc chanh leo', 'tea', 45000),
-(16, 'Xanh sữa', 'tea', 55000),
-(16, 'Đen sữa', 'tea', 55000),
-(16, 'Ấm trà xanh', 'tea', 45000);
-
-
-
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(17, 'Cà phê đen', 'coffee', 18000),
-(17, 'Cà phê sữa (nâu)', 'coffee', 20000),
-(17, 'Bạc xỉu', 'coffee', 30000),
-(17, 'Cà phê cốt dừa', 'coffee', 40000),
-(17, 'Trà đào', 'tea', 30000),
-(17, 'Trà hoa cúc mật ong', 'tea', 30000),
-(17, 'Trà bá tước', 'tea', 30000),
-(17, 'Trà táo quế', 'tea', 50000),
-(17, 'Nước ép Táo', 'juice', 35000),
-(17, 'Nước ép Dứa', 'juice', 35000),
-(17, 'Nước ép Ổi', 'juice', 35000),
-(17, 'Sinh tố xoài', 'smoothie', 35000),
-(17, 'Sinh tố bơ', 'smoothie', 45000),
-(17, 'Sinh tố mãng cầu', 'smoothie', 35000),
-(17, 'Sinh tố chanh leo', 'smoothie', 35000);
-
-
-
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(18, 'Cà phê đen', 'coffee', 25000),
-(18, 'Cà phê nâu', 'coffee', 25000),
-(18, 'Americano', 'coffee', 25000),
-(18, 'Bạc xỉu', 'coffee', 30000),
-(18, 'Cà phê cốt dừa', 'coffee', 35000),
-(18, 'Cà phê kem trứng', 'coffee', 30000),
-(18, 'Cà phê muối', 'coffee', 30000),
-(18, 'Nước ép dứa', 'juice', 30000),
-(18, 'Nước ép dưa hấu', 'juice', 30000),
-(18, 'Nước ép cam', 'juice', 40000),
-(18, 'Nước ép táo', 'juice', 40000),
-(18, 'Nước ép cà rốt', 'juice', 25000),
-(18, 'Nước ép ổi', 'juice', 30000),
-(18, 'Trà đào cam sả', 'tea', 35000),
-(18, 'Trà xoài', 'tea', 25000);
-
-
-
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(19, 'Chanh tươi tuyết', 'smoothie', 35000),
-(19, 'Sinh tố Chuối Ca Cao', 'smoothie', 40000),
-(19, 'Cốt dừa Cà phê', 'smoothie', 40000),
-(19, 'Cốt dừa Ca Cao', 'smoothie', 40000),
-(19, 'Sinh tố Dừa Đậu đỏ', 'smoothie', 42000),
-(19, 'Freeze Việt quất', 'smoothie', 45000),
-(19, 'Freeze Chanh leo', 'smoothie', 45000),
-(19, 'Freeze Cà phê', 'smoothie', 40000),
-(19, 'Sinh tố Dưa hấu', 'smoothie', 35000),
-(19, 'Nước ép Táo', 'juice', 35000),
-(19, 'Nước ép Ổi', 'juice', 35000),
-(19, 'Nước ép Lê', 'juice', 35000),
-(19, 'Nước ép Dưa Hấu', 'juice', 35000),
-(19, 'Nước ép Cà Rốt', 'juice', 35000),
-(19, 'Nước ép Dứa', 'juice', 35000);
-
-
-
-
-INSERT INTO drinks (cafe_id, name, type, price) VALUES
-(20, 'Espresso', 'coffee', 30000),
-(20, 'Cappuccino', 'coffee', 45000),
-(20, 'Latte', 'coffee', 50000),
-(20, 'Mocha', 'coffee', 55000),
-(20, 'Caramel Macchiato', 'coffee', 55000),
-(20, 'Cà phê socola', 'coffee', 40000),
-(20, 'Cà phê caramel', 'coffee', 40000),
-(20, 'Trà cam quế mật ong', 'tea', 49000),
-(20, 'Trà sữa gạo lá nếp', 'tea', 55000),
-(20, 'Trà đào cam sả', 'tea', 55000),
-(20, 'Trà kem dâu', 'tea', 55000),
-(20, 'Sinh tố bơ', 'smoothie', 55000),
-(20, 'Sinh tố xoài', 'smoothie', 55000),
-(20, 'Sinh tố mãng cầu', 'smoothie', 55000),
-(20, 'Nước ép dưa lưới hạt chia', 'juice', 45000),
-(20, 'Nước ép cóc dứa', 'juice', 45000),
-(20, 'Nước ép đào', 'juice', 45000),
-(20, 'Nước ép dứa hấu', 'juice', 45000),
-(20, 'Nước ép chanh leo', 'juice', 45000);
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (210, 9, 'Phê kem', 'coffee', 39000.00, NULL, 'https://i.pinimg.com/236x/13/07/41/13074184c40239746c05d9f7ca01ae35.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (211, 9, 'Phê kem muối', 'coffee', 39000.00, NULL, 'https://i.pinimg.com/236x/64/3d/c3/643dc39d93be53a8a718429e661fc684.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (212, 9, 'Sữa chua là nếp', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/d8/f5/a5/d8f5a545c8604a641aa2c394e25e422b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (213, 9, 'Sữa chua cà phê', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/50/39/b7/5039b77d9a7fc69150f63a98eeaf2ec7.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (214, 9, 'Sữa chua cacao', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/73/3d/cb/733dcb6d4e8b511c253c363a545ca3e0.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (215, 9, 'Sữa chua coco', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/23/83/ed/2383ed3e7bfd4ad12240e2b038587437.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (216, 9, 'Quất mật', 'tea', 45000.00, NULL, 'https://i.pinimg.com/236x/9c/0c/c6/9c0cc6ed214443802b110e72fc301382.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (217, 9, 'Nho dứa', 'tea', 45000.00, NULL, 'https://i.pinimg.com/236x/1b/12/9f/1b129f2e62408fa622df48e3b89b8847.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (8, 1, 'DETOX JUICE (CURLY KALE + CARROT + CUCUMBER + APPLE)', 'juice', 79000.00, NULL, 'https://i.pinimg.com/236x/8f/ac/42/8fac42658fc2a29f721baa67df80ce01.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (9, 1, 'DETOX VITAMIN (CURLY KALE + CARROT + ORANGE + PINEAPPLE)', 'juice', 79000.00, NULL, 'https://i.pinimg.com/236x/1f/d5/9b/1fd59bca49616d2d33b6fa3b63d6a00d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (10, 1, 'JASMINE TEA', 'tea', 60000.00, NULL, 'https://i.pinimg.com/236x/20/8e/8a/208e8adffa170c8b3275c6b32692ad48.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (25, 1, 'BANANA SHAKE', 'smoothie', 65000.00, NULL, 'https://i.pinimg.com/236x/f3/10/85/f31085af66b5cd61c9ae41b5d0d75449.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (26, 1, 'LEMON SHAKE', 'smoothie', 65000.00, NULL, 'https://i.pinimg.com/236x/e7/19/28/e719286e11a9d88aaec2d3dff5c332e5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (27, 2, 'Americano', 'coffee', 60000.00, NULL, 'https://i.pinimg.com/474x/fe/e4/cc/fee4cce7dc43130579d79d0145ca99af.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (28, 2, 'Latte', 'coffee', 70000.00, NULL, 'https://i.pinimg.com/474x/67/ec/ec/67ecece44df2635a6359a7c1e3bbf2ce.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (29, 2, 'Flat White', 'coffee', 75000.00, NULL, 'https://i.pinimg.com/236x/12/7c/99/127c997e1e8ffc441a4045d596dc758c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (30, 2, 'Cappuccino', 'coffee', 80000.00, NULL, 'https://i.pinimg.com/236x/33/44/2e/33442e58a74503c7cef4fc437a4ebc8e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (31, 2, 'Café Mocha', 'coffee', 80000.00, NULL, 'https://i.pinimg.com/236x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (32, 2, 'Cloud Mocha', 'coffee', 90000.00, NULL, 'https://i.pinimg.com/474x/ec/3c/31/ec3c31452c2de2d7516f99316f96a9a8.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (33, 2, 'Caramel Macchiato', 'coffee', 90000.00, NULL, 'https://i.pinimg.com/474x/19/24/a8/1924a8e7aadafab4b4f359e23bd20a3a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (34, 2, 'Vienna Coffee', 'coffee', 90000.00, NULL, 'https://i.pinimg.com/236x/a0/5e/77/a05e7715e40fde7b44059df8b6457122.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (35, 2, 'Matcha Café Latte', 'coffee', 90000.00, NULL, 'https://i.pinimg.com/236x/4b/7c/ef/4b7cefeb3f8f3e89f95a980f60a950cd.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (36, 2, 'Cold Brew', 'coffee', 90000.00, NULL, 'https://i.pinimg.com/474x/e6/50/b8/e650b8743a3f7bd761424e3c6a3a068b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (49, 2, 'Lime Juice', 'juice', 70000.00, NULL, 'https://i.pinimg.com/236x/71/d9/57/71d9575621f4ef07933b859e37d9e3a3.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (50, 3, 'Cà phê đen nóng/ đá pha máy', 'coffee', 40000.00, NULL, 'https://i.pinimg.com/236x/a8/d2/0b/a8d20bb5c2269bef16c71c83324d54d6.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (51, 3, 'Cà phê cốt dừa', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/236x/13/07/41/13074184c40239746c05d9f7ca01ae35.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (52, 3, 'Cà phê trứng nướng', 'coffee', 60000.00, NULL, 'https://i.pinimg.com/236x/64/48/93/644893203c4cd353a18db4978fe6c7af.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (53, 3, 'Caramel muối (Salted caramel)', 'coffee', 70000.00, NULL, 'https://i.pinimg.com/236x/5c/f5/f4/5cf5f498d4bff82c90a32ead2fd7b9ef.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (54, 3, 'Espresso', 'coffee', 40000.00, NULL, 'https://i.pinimg.com/474x/f2/b6/d2/f2b6d2c2b0bf8760469b2ebb2e27ab15.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (55, 3, 'Latte', 'coffee', 65000.00, NULL, 'https://i.pinimg.com/474x/69/07/aa/6907aae88c06d762aa3ad0bb05c50d06.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (56, 3, 'Cappuccino', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/474x/c9/ad/6a/c9ad6a3f5ed0a596388cd66baca9c14f.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (58, 3, 'Vanilla latte', 'coffee', 75000.00, NULL, 'https://i.pinimg.com/236x/57/91/fc/5791fc468c16738f3ebbda7060adba82.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (59, 3, 'Ôn đới sữa đặc (Condensed milk latte)', 'coffee', 75000.00, NULL, 'https://i.pinimg.com/236x/20/3d/ed/203dede2f4d54066cfc4aaad2dc733b5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (60, 3, 'Caramel macchiato', 'coffee', 75000.00, NULL, 'https://i.pinimg.com/236x/d2/0c/e6/d20ce6b882f53f35c58738dab963434b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (61, 3, 'Americano', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/474x/4a/d7/b7/4ad7b70efacd8390944568f16d1a3096.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (62, 3, 'Trà tắc hồng bì', 'tea', 60000.00, NULL, 'https://i.pinimg.com/474x/44/5e/bb/445ebb6f46489c775def6bb01fb7f41d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (63, 3, 'Trà đào cam sả', 'tea', 80000.00, NULL, 'https://i.pinimg.com/236x/20/56/44/205644e9c3334aefb25f107e30498b21.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (76, 3, 'Nước chanh leo', 'juice', 60000.00, NULL, 'https://i.pinimg.com/474x/41/26/d4/4126d46e253761d95bdbee4e52ecd0f8.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (77, 3, 'Nước cam', 'juice', 60000.00, NULL, 'https://i.pinimg.com/236x/74/bc/bb/74bcbba551d77e9e5c529e8664e26b88.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (78, 3, 'Nước dừa dứa nha đam', 'juice', 70000.00, NULL, 'https://i.pinimg.com/236x/0d/d4/f2/0dd4f2fb33babbfefdeeabc1e23be8c7.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (79, 3, 'Sinh tố bơ sen hạnh nhân', 'smoothie', 50000.00, NULL, 'https://i.pinimg.com/236x/ba/60/e9/ba60e99713ea7aa5e3b046aba781162c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (80, 3, 'Quất hồng bì tuyết', 'smoothie', 80000.00, NULL, 'https://i.pinimg.com/474x/44/5e/bb/445ebb6f46489c775def6bb01fb7f41d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (81, 3, 'Sinh tố xoài', 'smoothie', 70000.00, NULL, 'https://i.pinimg.com/236x/8f/09/c2/8f09c2c3fea82ef00c5bc596795aaaa3.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (82, 3, 'Sinh tố bổ', 'smoothie', 70000.00, NULL, 'https://i.pinimg.com/236x/cc/9b/38/cc9b38af6f2d0d12eb7a06d8337d8e63.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (83, 3, 'Sinh tố avocado', 'smoothie', 70000.00, NULL, 'https://i.pinimg.com/236x/90/ed/9a/90ed9a1c2d82279037206dd0f1d0e248.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (84, 3, 'Sinh tố kim quất', 'smoothie', 70000.00, NULL, 'https://i.pinimg.com/236x/05/91/20/059120717b14ccf58d97e516ba0254d7.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (85, 4, 'Cà phê cốt dừa', 'coffee', 40000.00, NULL, 'https://i.pinimg.com/236x/ff/3b/96/ff3b96f98e630a8d6deca876fe08e4e5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (218, 9, 'Dâu rừng hoa hồng', 'tea', 49000.00, NULL, 'https://i.pinimg.com/474x/d6/42/b7/d642b729e294b6b3589b2d32ac5c90ab.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (219, 9, 'Bưởi hồng cánh sen', 'tea', 49000.00, NULL, 'https://i.pinimg.com/236x/8c/4d/4f/8c4d4f544fe84d1d1cfca56eaae84184.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (220, 9, 'Ôlong sữa', 'tea', 49000.00, NULL, 'https://i.pinimg.com/236x/e7/d4/35/e7d435415997bd0f93c4f70947012a55.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (221, 9, 'Ôlong bơ sữa', 'tea', 55000.00, NULL, 'https://i.pinimg.com/236x/5a/d5/1b/5ad51b165208f3c26e6c429ac59c08d8.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (222, 9, 'Hướng dương', 'tea', 25000.00, NULL, 'https://i.pinimg.com/236x/f6/22/2c/f6222c1f67f8c49c781c6eb03fbb51c7.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (223, 10, 'Cà phê đen', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/d6/37/33/d63733490f1b078fd201a7fbaae1510e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (224, 10, 'Cà phê nâu', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/e4/22/ce/e422ce00f8ce34da550d95619713ecbe.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (225, 10, 'Bạc xỉu', 'coffee', 40000.00, NULL, 'https://i.pinimg.com/236x/85/cb/c7/85cbc70305d9e005f2baceb199791d18.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (226, 10, 'La Jolie Café', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/236x/06/b9/c0/06b9c099aa78f18550899fed6d419561.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (227, 10, 'Cà phê cốt dừa', 'coffee', 45000.00, NULL, 'https://i.pinimg.com/236x/dc/4b/04/dc4b04ff107b6cc6e4a5208c42bcc0d0.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (228, 10, 'Latte', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/236x/b8/4c/9d/b84c9db0910aa8247d79b69a4ecd1438.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (229, 10, 'Trà thạch đào', 'tea', 55000.00, NULL, 'https://i.pinimg.com/236x/b3/32/48/b3324887c2e76c61a5788f9848ecbc65.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (230, 10, 'Trà dâu dứa', 'tea', 60000.00, NULL, 'https://i.pinimg.com/236x/f0/72/37/f0723721dbf503a746d9e57c581e87a9.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (231, 10, 'La Jolie Tea', 'tea', 60000.00, NULL, 'https://i.pinimg.com/236x/6f/9e/6f/6f9e6f5dce5ecf4c1ee0bbf48925e970.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (232, 10, 'Trà ổi hồng', 'tea', 60000.00, NULL, 'https://i.pinimg.com/474x/44/5e/bb/445ebb6f46489c775def6bb01fb7f41d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (99, 4, 'Hồng trà sữa', 'tea', 40000.00, NULL, 'https://i.pinimg.com/236x/a0/86/dc/a086dca096a0506da9f0544e6781b9e5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (100, 4, 'Bào ngư cam', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/cc/84/e3/cc84e3288da6d5e646692988a73fb36b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (101, 4, 'Cam quế', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/a7/00/f1/a700f1cbdba6903e10af972f45b01260.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (102, 4, 'Đào cam sả', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/9d/e4/7d/9de47dafcdd21e6639ce90366b622fd3.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (103, 4, 'Cam tươi', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/b2/4e/e9/b24ee90a791bf14c595014513683766d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (111, 4, 'Việt quất', 'smoothie', 55000.00, NULL, 'https://i.pinimg.com/236x/a0/1e/70/a01e702a2e625c975105cdca5228b21f.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (112, 5, 'Cà phê đen nóng/ đá', 'coffee', 25000.00, NULL, 'https://i.pinimg.com/474x/f7/40/bc/f740bca22086e74ff29c8082d7694fb1.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (113, 5, 'Nâu nóng/ đá', 'coffee', 25000.00, NULL, 'https://i.pinimg.com/236x/01/f6/a1/01f6a1b440672272ee70446591b3b7b6.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (114, 5, 'Bạc xỉu', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/c5/8a/88/c58a88f9190b8b751a4576edca99f7ef.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (115, 5, 'Cà phê cốt dừa', 'coffee', 40000.00, NULL, 'https://i.pinimg.com/474x/f9/81/f3/f981f3f2761f529e896e884de6a94dcc.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (116, 5, 'Cà phê đá xay', 'smoothie', 35000.00, NULL, 'https://i.pinimg.com/236x/f1/7c/1c/f17c1c2e80db9107373518ffdc81a93e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (131, 5, 'Nước ép', 'juice', 40000.00, NULL, 'https://i.pinimg.com/236x/23/51/05/2351051c684310421c2e83e5c50e9e48.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (132, 5, 'Sinh tố bơ', 'smoothie', 40000.00, NULL, 'https://i.pinimg.com/236x/d5/62/72/d562720b865414b4c78eeac1921bd476.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (133, 5, 'Sinh tố mãng cầu', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/ac/f1/0a/acf10a95032d3ce9a6cf764785ee8ee5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (134, 5, 'Sinh tố xoài', 'smoothie', 40000.00, NULL, 'https://i.pinimg.com/236x/74/cb/1a/74cb1afcd15dc09dc6aef6818bcb6420.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (135, 5, 'Sinh tố chanh leo', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/cd/d2/7b/cdd27b42715da31170c4cf8d90ffb877.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (136, 5, 'Sinh tố sữa chua', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/93/8c/24/938c24685667a511f3b59665c5d310c5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (137, 6, 'Cafe đen', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/236x/bc/0c/ff/bc0cffc8b21c24b4b571e98b9ab5da12.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (138, 6, 'Cafe sữa', 'coffee', 28000.00, NULL, 'https://i.pinimg.com/236x/23/5d/9e/235d9e5bf87d476bba4f978c7488e234.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (139, 6, 'Bạc xỉu', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/47/5a/21/475a21568e4de16f5776a9bace025173.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (140, 6, 'Bạc xỉu Sài Gòn', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/75/12/2a/75122a5362a4a465deaa2e19b007ec3b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (141, 6, 'Cafe muối', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/13/07/41/13074184c40239746c05d9f7ca01ae35.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (150, 6, 'Trà bưởi hồng T.Long', 'tea', 45000.00, NULL, 'https://i.pinimg.com/474x/87/f4/c4/87f4c4eb7fc91f238857ef92ba151841.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (151, 6, 'Chanh tươi', 'juice', 30000.00, NULL, 'https://i.pinimg.com/236x/a2/9c/aa/a29caa1d70746dceb0b15a91662958fd.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (152, 6, 'Chanh leo', 'juice', 35000.00, NULL, 'https://i.pinimg.com/474x/41/26/d4/4126d46e253761d95bdbee4e52ecd0f8.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (153, 6, 'Dưa hấu', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/ac/f8/46/acf846189db55ba630727849ed95fe87.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (154, 6, 'Chanh dây', 'juice', 40000.00, NULL, 'https://i.pinimg.com/236x/a5/1c/59/a51c598271de9239f832a582d82c150c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (155, 6, 'Cam ép', 'juice', 40000.00, NULL, 'https://i.pinimg.com/236x/eb/b6/88/ebb6881beebb364aaf1d6b6117306e18.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (156, 6, 'Thơm', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/4e/83/51/4e8351b0660d16c0b61e97ddda6ced56.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (157, 6, 'Táo', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/87/91/5e/87915e5ced3d0602aaa026cbbcfa360d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (158, 6, 'Bơ', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/df/82/6b/df826b903a94b6422e82addf5463b968.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (159, 6, 'Mãng cầu', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/60/fa/47/60fa47f91e8aa8897aca5a3c32defc31.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (160, 6, 'Xoài', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/b3/76/c7/b376c71b505f1bb6f39030069ad42d58.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (200, 8, 'Trà chanh sả/đào sả/quất sả', 'tea', 25000.00, NULL, 'https://i.pinimg.com/236x/af/b8/e8/afb8e8fc6ff49b206267bf40ea5edf5a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (201, 8, 'Trà đào cam sả', 'tea', 30000.00, NULL, 'https://i.pinimg.com/236x/19/1a/44/191a44e58ec38fa7c7b13d701cd7f126.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (202, 8, 'Trà đào chanh leo', 'tea', 30000.00, NULL, 'https://i.pinimg.com/474x/41/26/d4/4126d46e253761d95bdbee4e52ecd0f8.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (203, 8, 'Trà táo bạc hà', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/40/a7/e1/40a7e14f34a6d10d45a72536e9946a98.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (204, 8, 'Trà táo quế', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/69/62/52/696252fd6bc017ff222695bf6799e53d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (205, 8, 'Trà cam quế mật ong', 'tea', 30000.00, NULL, 'https://i.pinimg.com/236x/9e/0f/2e/9e0f2ed83ac38c1d58e77a2fdcb745e7.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (206, 8, 'Trà dưa hấu nha đam', 'tea', 30000.00, NULL, 'https://i.pinimg.com/236x/8d/c5/64/8dc56428a9f499ef9d2aa588e0f32800.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (207, 9, 'Phê đen (nóng/đá)', 'coffee', 29000.00, NULL, 'https://i.pinimg.com/236x/e2/47/0f/e2470fb9c529c0cccfdaf8264d96a8d6.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (208, 9, 'Phê nâu (nóng/đá)', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/4b/35/c2/4b35c2be17f119bba1d56e5eee2e61ff.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (209, 9, 'Phê sữa tươi', 'coffee', 39000.00, NULL, 'https://i.pinimg.com/236x/e6/11/c5/e611c5c31e9a974492d0d0dc9413c2a2.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (233, 10, 'Trà xoài dứa', 'tea', 60000.00, NULL, 'https://i.pinimg.com/474x/b6/e9/5f/b6e95fd5250674c797bd0af4670c724b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (234, 10, 'Nước ép cam', 'juice', 55000.00, NULL, 'https://i.pinimg.com/236x/1f/85/8d/1f858d0449f08f22772af491d46639f8.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (235, 10, 'Nước ép dứa', 'juice', 55000.00, NULL, 'https://i.pinimg.com/236x/44/27/95/4427956775c1c457cc07ba815fb5e65e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (236, 10, 'Nước ép dưa hấu', 'juice', 55000.00, NULL, 'https://i.pinimg.com/236x/ab/c1/56/abc15600e3514b8a780466d14bec1658.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (237, 10, 'Matcha đá xay', 'smoothie', 55000.00, NULL, 'https://i.pinimg.com/236x/6e/b0/d8/6eb0d895ebfca2c4aac3d5a8d44b750a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (238, 10, 'Chococookies đá xay', 'smoothie', 55000.00, NULL, 'https://i.pinimg.com/236x/3f/f4/1b/3ff41b75ec5029918331712dc192c338.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (239, 10, 'Xoài dừa đá xay', 'smoothie', 55000.00, NULL, 'https://i.pinimg.com/236x/54/f2/41/54f2416823d665b8a59a8b78b3a170af.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (240, 11, 'Cà phê đen', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/84/3b/08/843b081dc87e2f64f31f0f30cf3c6058.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (241, 11, 'Cà phê nâu', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/81/3e/3e/813e3ebd8dc60bb00925350efe7e6173.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (242, 11, 'Bạc xỉu', 'coffee', 40000.00, NULL, 'https://i.pinimg.com/236x/18/90/09/189009fd14aa34db7ed4a107126c2969.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (243, 11, 'Cà phê cốt dừa', 'coffee', 45000.00, NULL, 'https://i.pinimg.com/236x/34/9a/7b/349a7b9d9115ddc5cd97862330912e52.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (244, 11, 'Trà Ô long', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/31/ae/9d/31ae9dbf9b156d170e611c19e481e1a4.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (245, 11, 'Trà Nhài Táo Xanh', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/1d/f7/ba/1df7ba0b76b031bf956b5c57225d720a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (246, 11, 'Trà Sen Vang Sả', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/13/29/2f/13292f0a2609c317a663c29128414934.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (247, 11, 'Ô long Dứa Lưới', 'tea', 35000.00, NULL, 'https://i.pinimg.com/474x/d5/f6/52/d5f6526ae7d0be8685e89ad3f68177c7.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (248, 11, 'Trà Đào Cam Sả Nóng', 'tea', 40000.00, NULL, 'https://i.pinimg.com/236x/60/d1/86/60d186581d7d2628d733da409f555db7.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (249, 11, 'Trà Đào Chanh Leo Nóng', 'tea', 40000.00, NULL, 'https://i.pinimg.com/236x/bf/d4/6d/bfd46dc4728b72d95bf67d34a7c779f5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (250, 11, 'Chanh leo', 'smoothie', 35000.00, NULL, 'https://i.pinimg.com/236x/a2/3f/5f/a23f5f56cd7fb80f31a242ebd280a0cd.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (251, 11, 'Cam Táo', 'smoothie', 35000.00, NULL, 'https://i.pinimg.com/236x/60/f9/1e/60f91e496b77f1e1ebde4612493e788d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (253, 11, 'Sinh tố Bơ', 'smoothie', 40000.00, NULL, 'https://i.pinimg.com/236x/3d/5b/54/3d5b54f1c43d060dc3ee914fa77d8012.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (254, 11, 'Sinh tố Bơ Xoài', 'smoothie', 40000.00, NULL, 'https://i.pinimg.com/236x/26/91/e2/2691e24bb5bf9efb11932c79eca8a319.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (255, 11, 'Sinh tố Xoài Hạnh Nhân', 'smoothie', 40000.00, NULL, 'https://i.pinimg.com/236x/93/64/19/9364197d4d865e102bc41d4e020bf869.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (256, 12, 'Cà phê đen', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/236x/40/a2/f8/40a2f8fa1abec9a2ed41bb7dc37e38c0.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (257, 12, 'Cà phê nâu', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/236x/1f/d4/55/1fd45589b52430e81dac9c37584f0404.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (258, 12, 'Sô cô la', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/236x/95/49/af/9549af2e956efb37367066183ab9a788.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (259, 12, 'Ca cao', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/236x/e2/11/04/e21104487570f76fcfb0ab3c01e22a31.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (260, 12, 'Trà sữa các vị', 'tea', 30000.00, NULL, 'https://i.pinimg.com/236x/51/a4/0c/51a40cd42b0b010fb092da36276438cf.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (261, 12, 'Trà các vị', 'tea', 30000.00, NULL, 'https://i.pinimg.com/236x/4c/33/26/4c3326cbad7f1908a876e0ebcbcb2365.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (262, 12, 'Trà cam quế', 'tea', 30000.00, NULL, 'https://i.pinimg.com/236x/a5/e1/4f/a5e14fb8e12aa368014ac2b6823f7bfa.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (1, 1, 'ESPRESSO', 'coffee', 50000.00, NULL, 'https://i.pinimg.com/236x/6a/86/c3/6a86c387495a30851e5843a582c7b6f2.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (2, 1, 'AMERICANO', 'coffee', 50000.00, NULL, 'https://i.pinimg.com/236x/cb/48/db/cb48db04009801523739569e0f33cfc3.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (3, 1, 'COFFEE LATTE', 'coffee', 65000.00, NULL, 'https://i.pinimg.com/236x/57/91/fc/5791fc468c16738f3ebbda7060adba82.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (4, 1, 'CAPUCHINO', 'coffee', 68000.00, NULL, 'https://i.pinimg.com/236x/60/16/24/601624588afbe86aa187efb9880629a6.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (5, 1, 'COCONUT COFFEE', 'coffee', 65000.00, NULL, 'https://i.pinimg.com/236x/87/09/ae/8709ae3b1a623ac7cd5fc8816817b8a1.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (6, 1, 'CHOCOLATE COFFEE', 'coffee', 68000.00, NULL, 'https://i.pinimg.com/474x/ec/3c/31/ec3c31452c2de2d7516f99316f96a9a8.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (7, 1, 'AVOCADO COFFEE', 'coffee', 68000.00, NULL, 'https://i.pinimg.com/736x/d2/ba/d7/d2bad76f56fc88d96934d3926d91d1a9.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (11, 1, 'LEMON TEA', 'tea', 60000.00, NULL, 'https://i.pinimg.com/474x/6f/01/dc/6f01dc988735ae91bb45d25216305ce5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (12, 1, 'GREEN TEA', 'tea', 60000.00, NULL, 'https://i.pinimg.com/474x/d9/1e/ec/d91eec5d6bb98e45262b1ac8e5491560.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (13, 1, 'VOI TEA', 'tea', 60000.00, NULL, 'https://i.pinimg.com/236x/f1/7c/1c/f17c1c2e80db9107373518ffdc81a93e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (14, 1, 'GINGER TEA', 'tea', 65000.00, NULL, 'https://i.pinimg.com/474x/ea/a6/8c/eaa68cfc2296860bc1c9785081816cd9.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (15, 1, 'COCOA', 'tea', 55000.00, NULL, 'https://i.pinimg.com/236x/7d/cd/91/7dcd91034529ddc099805e3aeffccd7b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (16, 1, 'PINEAPPLE JUICE', 'juice', 60000.00, NULL, 'https://i.pinimg.com/236x/7a/41/61/7a4161cbd3e1bae851f370dd936f7111.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (17, 1, 'CARROT JUICE', 'juice', 60000.00, NULL, 'https://i.pinimg.com/236x/0a/9f/d9/0a9fd943f2a4440dc10c097eccfcdbff.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (18, 1, 'WATERMELON JUICE', 'juice', 60000.00, NULL, 'https://i.pinimg.com/474x/ed/d0/c1/edd0c1f7d18091997fa4b5fbb4de4c69.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (19, 1, 'ORANGE JUICE', 'juice', 60000.00, NULL, 'https://i.pinimg.com/236x/1a/14/76/1a14762128b26e6c916fe385777664a2.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (20, 1, 'PASSION FRUIT JUICE', 'juice', 60000.00, NULL, 'https://i.pinimg.com/236x/d6/52/99/d65299e33632af40ae6e44c845c69822.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (21, 1, 'COCONUT JUICE', 'juice', 60000.00, NULL, 'https://i.pinimg.com/236x/0e/9c/ad/0e9cad0bc7473226b39a42f2ecbf83bb.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (22, 1, 'MOJITO', 'juice', 98000.00, NULL, 'https://i.pinimg.com/236x/2d/ba/d6/2dbad6249c9ed770737591735f7071fd.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (23, 1, 'AVOCADO SHAKE', 'smoothie', 65000.00, NULL, 'https://i.pinimg.com/236x/90/ed/9a/90ed9a1c2d82279037206dd0f1d0e248.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (24, 1, 'MANGO SHAKE', 'smoothie', 65000.00, NULL, 'https://i.pinimg.com/474x/5d/17/71/5d17716e29612d881e8f64c3ada2c625.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (37, 2, 'Cold Brew Latte', 'coffee', 100000.00, NULL, 'https://i.pinimg.com/236x/0f/df/7b/0fdf7b83aed44004a8873bc356b6f40a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (38, 2, 'Cold Brew Einspanner', 'coffee', 110000.00, NULL, 'https://i.pinimg.com/236x/f7/dd/12/f7dd12457331d2eb6d3a7f9e4509b8cf.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (39, 2, 'Matcha Latte', 'tea', 70000.00, NULL, 'https://i.pinimg.com/236x/e5/45/ca/e545cadad8183fcffd6e140efed1ecdf.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (40, 2, 'Ssuk Latte', 'tea', 70000.00, NULL, 'https://i.pinimg.com/236x/8f/b1/d5/8fb1d5410a11056dad5b9e39631bc8f7.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (41, 2, 'Black tea Latte', 'tea', 75000.00, NULL, 'https://i.pinimg.com/474x/27/1f/e8/271fe8e6e03bb2633a5ad298406b8ff5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (42, 2, 'Cacao Latte', 'tea', 70000.00, NULL, 'https://i.pinimg.com/474x/b5/77/03/b577039a774a57cdec24a8a8fd8963ba.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (43, 2, 'Lime Snow', 'smoothie', 75000.00, NULL, 'https://i.pinimg.com/474x/23/33/26/2333266baaa2ecb0740f055094a5c768.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (44, 2, 'Mango', 'smoothie', 75000.00, NULL, 'https://i.pinimg.com/236x/be/a1/da/bea1da1e52b88d05dbabaa4ec080dcc6.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (45, 2, 'Matcha', 'smoothie', 75000.00, NULL, 'https://i.pinimg.com/474x/4b/09/41/4b09411020a5876342e083013b15d5b2.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (46, 2, 'Ssuk', 'smoothie', 80000.00, NULL, 'https://i.pinimg.com/236x/db/e0/a6/dbe0a6469221a56a70e6ea80d054701e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (47, 2, 'Mixed Grains Latte', 'smoothie', 80000.00, NULL, 'https://i.pinimg.com/474x/7c/34/c1/7c34c11cc4de833e29bf102ce0469a3d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (48, 2, 'pineapple Juice', 'juice', 75000.00, NULL, 'https://i.pinimg.com/236x/fe/71/0d/fe710dfd40262dbf540e410a19ccffd4.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (64, 3, 'Trà búp dâm xoài cam', 'tea', 60000.00, NULL, 'https://i.pinimg.com/474x/58/f0/ce/58f0ce2205d4082a9b9e2d3b77e64eb8.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (65, 3, 'Trà ô long nhãn hạt dẻ cười', 'tea', 70000.00, NULL, 'https://i.pinimg.com/236x/69/0d/39/690d397891089e155e4e81de28d9041e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (66, 3, 'Trà sữa ô long', 'tea', 70000.00, NULL, 'https://i.pinimg.com/236x/a9/f1/dc/a9f1dc73e45adadc61509c75d30681a5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (67, 3, 'Trà sữa earl grey', 'tea', 50000.00, NULL, 'https://i.pinimg.com/236x/92/7d/6e/927d6ebd0178c7e21ccff41ae126a9b0.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (68, 3, 'Trà sữa sinh tố bơ', 'tea', 50000.00, NULL, 'https://i.pinimg.com/236x/18/d9/bc/18d9bc1f47a48120ab55448f983996c9.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (69, 3, 'Trà sữa hạt dẻ cười kem trứng nướng', 'tea', 70000.00, NULL, 'https://i.pinimg.com/236x/5a/d5/1b/5ad51b165208f3c26e6c429ac59c08d8.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (70, 3, 'Trà lychee hibiscus', 'tea', 50000.00, NULL, 'https://i.pinimg.com/236x/f0/2c/a5/f02ca5697a4227d0496152ff3522ac3b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (71, 3, 'Trà bạc hà', 'tea', 50000.00, NULL, 'https://i.pinimg.com/474x/94/01/f8/9401f89f01a4358a0f48e12c15f57eda.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (72, 3, 'Trà gừng', 'tea', 70000.00, NULL, 'https://i.pinimg.com/236x/12/15/6e/12156e1b4b9de27b2fb02a36ec0dd86e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (73, 3, 'Nước chanh', 'juice', 60000.00, NULL, 'https://i.pinimg.com/236x/ba/19/24/ba192469ca24ceb0b31d66c993f0aa54.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (74, 3, 'Lavie en rose', 'juice', 60000.00, NULL, 'https://i.pinimg.com/236x/fa/34/55/fa3455724d2e2e0c7c5edf379acdbf5c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (75, 3, 'Nước ép dứa', 'juice', 60000.00, NULL, 'https://i.pinimg.com/236x/bb/f0/7f/bbf07f3233d6777f8d6917a61c69585c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (86, 4, 'Cafe muối', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/13/07/41/13074184c40239746c05d9f7ca01ae35.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (87, 4, 'Bạc xỉu', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/c5/8a/88/c58a88f9190b8b751a4576edca99f7ef.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (88, 4, 'Cafe nâu đen', 'coffee', 25000.00, NULL, 'https://i.pinimg.com/236x/7f/98/92/7f98920e7c427ed9bd016003ddf27c57.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (89, 4, 'Cafe Tiramisu', 'coffee', 50000.00, NULL, 'https://i.pinimg.com/236x/5f/46/f2/5f46f23813478b17c72002b0bb5e96f1.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (90, 4, 'Cafe kem trứng', 'coffee', 60000.00, NULL, 'https://i.pinimg.com/236x/45/0c/be/450cbe39ba158f327c93125bcb592324.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (91, 4, 'Cafe hạnh nhân', 'coffee', 60000.00, NULL, 'https://i.pinimg.com/474x/f0/12/bd/f012bd3fc7a8422f5c30adbeab9b3801.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (92, 4, 'Trà chanh nhiệt độ', 'tea', 40000.00, NULL, 'https://i.pinimg.com/236x/02/86/50/028650332404b73ac24836f846569f85.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (93, 4, 'Trà chanh nhiệt độ đá', 'tea', 40000.00, NULL, 'https://i.pinimg.com/474x/44/5e/bb/445ebb6f46489c775def6bb01fb7f41d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (94, 4, 'Đào bưởi kem trứng', 'tea', 45000.00, NULL, 'https://i.pinimg.com/736x/38/f3/da/38f3da471bb0eeb2d58d2e407fec617a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (95, 4, 'Matcha cốt dừa', 'tea', 45000.00, NULL, 'https://i.pinimg.com/236x/9e/72/79/9e72797a32e724fcab79f17bc7764d5c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (96, 4, 'Ô long hồng', 'tea', 60000.00, NULL, 'https://i.pinimg.com/474x/d6/42/b7/d642b729e294b6b3589b2d32ac5c90ab.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (97, 4, 'Matcha kem cheese', 'tea', 40000.00, NULL, 'https://i.pinimg.com/236x/31/7e/d0/317ed08da5471c7962c55b93224a691f.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (98, 4, 'Sen vàng', 'tea', 40000.00, NULL, 'https://i.pinimg.com/236x/1e/eb/f1/1eebf17439c8521effe7d57edd4ca24a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (104, 4, 'Ổi cóc (Dứa)', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/76/50/b4/7650b48216ea778c534651cc83c5ceb9.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (105, 4, 'Dứa xiêm', 'juice', 40000.00, NULL, 'https://i.pinimg.com/736x/02/4a/ae/024aaec5d14d20272974114c03ddaf20.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (106, 4, 'Cam', 'juice', 40000.00, NULL, 'https://i.pinimg.com/236x/2f/87/93/2f8793c44c0649eabd20a616ac512b0f.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (107, 4, 'Chanh leo/ Dưa hấu', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/25/ec/91/25ec91512d87801684af85cffa7d6075.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (108, 4, 'Ổi cóc dừa cà rốt', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/bc/3f/0a/bc3f0a2e348411f0b89a7f6aef910be3.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (109, 4, 'Bơ', 'smoothie', 55000.00, NULL, 'https://i.pinimg.com/236x/96/09/26/9609262fcfd8ae3f7661611faa4b5d14.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (110, 4, 'Mango', 'smoothie', 50000.00, NULL, 'https://i.pinimg.com/236x/cb/e9/22/cbe92252fc572bae5174a23dfb978c7a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (117, 5, 'Cà phê socola', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/d3/df/ff/d3dffff43d0374d9671134e7e3e20170.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (118, 5, 'Cà phê vani', 'smoothie', 40000.00, NULL, 'https://i.pinimg.com/236x/13/07/41/13074184c40239746c05d9f7ca01ae35.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (119, 5, 'Matcha đá xay', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/474x/38/fc/ab/38fcab08cfc88d2553149e2c41fa0650.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (120, 5, 'Socola cookies', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/7d/d9/47/7dd947c2740e64b9a0c9800655d88a1a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (121, 5, 'Cốt dừa hoa đậu biếc', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/c8/c0/1b/c8c01bae7784ecea9afa60da8c44380b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (122, 5, 'Dừa tươi', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/20/8b/30/208b307fca5541de8d9984e673a4e083.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (123, 5, 'Chanh tươi', 'juice', 45000.00, NULL, 'https://i.pinimg.com/474x/0e/06/37/0e0637bcbcffc6ed56caaca3f192fefc.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (124, 5, 'Chanh dây', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/bf/d4/6d/bfd46dc4728b72d95bf67d34a7c779f5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (125, 5, 'Cam tươi', 'juice', 45000.00, NULL, 'https://i.pinimg.com/474x/bc/ca/d3/bccad3560604ca27eff7c5281c827bff.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (126, 5, 'Lựu ép', 'juice', 50000.00, NULL, 'https://i.pinimg.com/236x/38/d6/54/38d65444ab3ee3b08531f0756aa369ba.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (127, 5, 'Ổi ép', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/44/1b/10/441b10d4daf437e182fe2e0b21785d0b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (128, 5, 'Bưởi ép', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/76/8c/34/768c340d9656b8795bff73cc5deaec0b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (129, 5, 'Táo ép', 'juice', 40000.00, NULL, 'https://i.pinimg.com/236x/f6/90/59/f69059b44f9a0b78440029f143f343a2.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (130, 5, 'Dứa ép', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/ef/ae/a4/efaea46cfe513f71ebed22bfe57338c5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (142, 6, 'Cafe kem cheese', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/5c/63/f6/5c63f63b836b05ff3e56cabb9fd8f1f6.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (143, 6, 'Matcha Latte', 'coffee', 45000.00, NULL, 'https://i.pinimg.com/236x/4b/7c/ef/4b7cefeb3f8f3e89f95a980f60a950cd.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (144, 6, 'Cacao', 'coffee', 45000.00, NULL, 'https://i.pinimg.com/236x/4f/15/c3/4f15c3b9d4d87160cf23d2bf8eeb386f.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (145, 6, 'Trà chanh hạt đác', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/2c/8c/6c/2c8c6c15e070b6b88e7efa3ea4775198.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (146, 6, 'Trà vải', 'tea', 40000.00, NULL, 'https://i.pinimg.com/236x/f3/ec/69/f3ec69772e3620a20113ca61769379fd.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (147, 6, 'Trà đào cam sả', 'tea', 45000.00, NULL, 'https://i.pinimg.com/236x/cf/51/fb/cf51fb52f8c04e97cda277b30a20dbf6.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (148, 6, 'Trà đào chanh dây', 'tea', 45000.00, NULL, 'https://i.pinimg.com/236x/a5/1c/59/a51c598271de9239f832a582d82c150c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (149, 6, 'Trà xoài chanh dây', 'tea', 45000.00, NULL, 'https://i.pinimg.com/236x/da/d1/8a/dad18a0fc582965ae7a1ebc5aab0d29e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (161, 6, 'Mix (2 loại)', 'smoothie', 50000.00, NULL, 'https://i.pinimg.com/736x/3c/19/c1/3c19c1856eb64352fa972e4cd0e15b58.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (162, 6, 'Dâu tầm sữa chua', 'smoothie', 50000.00, NULL, 'https://i.pinimg.com/236x/ae/99/87/ae9987c72d2a0f941eb2ee0dd1ec47b8.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (163, 7, 'Americano', 'coffee', 50000.00, NULL, 'https://i.pinimg.com/236x/a0/4a/0b/a04a0b49a5b33f8e8e198f7a11bc5b79.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (164, 7, 'Cappuccino', 'coffee', 50000.00, NULL, 'https://i.pinimg.com/236x/7c/30/b6/7c30b68cb52c7a216ebe931374688d20.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (165, 7, 'Cà phê sữa đặc', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/f7/0d/58/f70d58135c9962bd8ce5100d8d45613a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (166, 7, 'Cà phê sữa đá muối', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/13/a3/20/13a320437adef444e9dcd45be1d62b30.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (167, 7, 'Cà phê đen đá', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/474x/eb/6e/e9/eb6ee928f4a4c32311ee9453e7d0e9a6.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (168, 7, 'Bạc xỉu', 'coffee', 45000.00, NULL, 'https://i.pinimg.com/236x/47/5a/21/475a21568e4de16f5776a9bace025173.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (169, 7, 'Cà phê cốt dừa', 'coffee', 50000.00, NULL, 'https://i.pinimg.com/236x/a8/0b/92/a80b92b6ca73204998578d5f624e0e2e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (170, 7, 'Cà phê sữa đá mang đen', 'coffee', 40000.00, NULL, 'https://i.pinimg.com/236x/13/07/41/13074184c40239746c05d9f7ca01ae35.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (171, 7, 'Trà đào cam sả', 'tea', 45000.00, NULL, 'https://i.pinimg.com/236x/2f/87/93/2f8793c44c0649eabd20a616ac512b0f.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (172, 7, 'Trà xoài chanh leo', 'tea', 45000.00, NULL, 'https://i.pinimg.com/236x/a5/1c/59/a51c598271de9239f832a582d82c150c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (173, 7, 'Trà bưởi hồng', 'tea', 45000.00, NULL, 'https://i.pinimg.com/474x/bc/22/ef/bc22ef28d1ad85e1fd91dba52918c291.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (174, 7, 'Trà gừng', 'tea', 35000.00, NULL, 'https://i.pinimg.com/474x/46/2b/da/462bda0c928549509b0d953d68a8af42.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (175, 7, 'Trà tắc', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/c4/39/fb/c439fb009cb5ee9e476c03048f5a9678.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (176, 7, 'Cam nguyên chất', 'juice', 50000.00, NULL, 'https://i.pinimg.com/236x/e7/4d/38/e74d3831002f50302649c556f44e7d79.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (177, 7, 'Chanh dây', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/9c/15/0c/9c150c164299e289b787e43e85ff4868.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (178, 7, 'Dưa hấu', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/af/7e/38/af7e3802c79e25e0ae03d8034bfe83fe.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (179, 7, 'Cam chanh dây', 'juice', 50000.00, NULL, 'https://i.pinimg.com/236x/b9/88/28/b988286e6af6745948893021ff0f6f36.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (180, 7, 'Cam cà rốt', 'juice', 50000.00, NULL, 'https://i.pinimg.com/236x/c6/19/ea/c619ea74046dde0da5a0e41816957b07.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (181, 7, 'Bơ', 'smoothie', 50000.00, NULL, 'https://i.pinimg.com/236x/6b/fb/94/6bfb942d419b4d2e75ceb840fdd4fab2.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (182, 7, 'Xoài', 'smoothie', 50000.00, NULL, 'https://i.pinimg.com/236x/74/cb/1a/74cb1afcd15dc09dc6aef6818bcb6420.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (183, 7, 'Dâu', 'smoothie', 50000.00, NULL, 'https://i.pinimg.com/236x/47/15/9e/47159ef8ebfe44a91f9f978bda96f326.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (184, 7, 'Kem dâu sữa chua', 'smoothie', 58000.00, NULL, 'https://i.pinimg.com/236x/42/0f/b2/420fb233aaa6beff1eeccd13da873fcc.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (185, 7, 'Kem chuối sữa chua', 'smoothie', 58000.00, NULL, 'https://i.pinimg.com/236x/95/7f/93/957f93c082bd4921d1fd3ac174fc2947.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (186, 7, 'Xoài chanh leo', 'smoothie', 58000.00, NULL, 'https://i.pinimg.com/236x/9c/df/e4/9cdfe40732f0f435ab8c539875873ad6.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (187, 8, 'Nâu', 'coffee', 20000.00, NULL, 'https://i.pinimg.com/474x/5a/97/ea/5a97ea41510373459e9639b0f2bd5505.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (188, 8, 'Đen', 'coffee', 20000.00, NULL, 'https://i.pinimg.com/236x/fb/da/57/fbda57538cd704d8465f0cf3b4aa0fe7.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (189, 8, 'Nâu/Đen pha phin', 'coffee', 25000.00, NULL, 'https://i.pinimg.com/236x/c1/71/a3/c171a3f29ca4537af6f530aa6c5e1649.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (190, 8, 'Bạc xỉu', 'coffee', 20000.00, NULL, 'https://i.pinimg.com/474x/5d/b1/47/5db147937e2349c5e6e9acad6b8eed97.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (191, 8, 'Cacao', 'coffee', 25000.00, NULL, 'https://i.pinimg.com/236x/4f/15/c3/4f15c3b9d4d87160cf23d2bf8eeb386f.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (192, 8, 'Cacao cốt dừa', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/236x/e4/3f/5a/e43f5a2962ef21a48002c8cd5f754a98.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (193, 8, 'Cafe cốt dừa', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/236x/d8/8f/ba/d88fba2c07530100d508972f93428666.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (194, 8, 'Sữa chua đá', 'smoothie', 20000.00, NULL, 'https://i.pinimg.com/736x/0f/79/e8/0f79e83c07143954e8351d74bbfb60a9.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (195, 8, 'Sữa chua cacao', 'smoothie', 25000.00, NULL, 'https://i.pinimg.com/236x/d4/cc/f5/d4ccf5a2ecbad3b434fee199a542022c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (196, 8, 'Sữa chua chanh leo', 'smoothie', 25000.00, NULL, 'https://i.pinimg.com/236x/f6/e7/24/f6e724d53926c8e7ff759a79e5a573f1.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (197, 8, 'Hộp sữa chua', 'smoothie', 15000.00, NULL, 'https://i.pinimg.com/236x/de/15/8f/de158f1c4dd6c4e49996b927481975b1.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (198, 8, 'Trà gừng mật ong', 'tea', 20000.00, NULL, 'https://i.pinimg.com/236x/ff/3b/ab/ff3bab2a5f7e68effa3690a6cd1ef038.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (199, 8, 'Trà đào', 'tea', 25000.00, NULL, 'https://i.pinimg.com/236x/df/98/1b/df981b2dbcbe675b137d19f3337c2804.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (252, 11, 'Dứa Ổi', 'smoothie', 35000.00, NULL, 'https://i.pinimg.com/236x/fd/fd/3e/fdfd3e341851d8e0b91e2cb5403b013d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (263, 12, 'Trà cúc sả', 'tea', 30000.00, NULL, 'https://i.pinimg.com/236x/f7/ee/c8/f7eec8ec4ac807e607fc95aeefcfa026.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (264, 12, 'Trà cam gừng', 'tea', 30000.00, NULL, 'https://i.pinimg.com/236x/ee/de/07/eede077f55a7ce83de0e5b0ddc88ac82.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (265, 12, 'Trà ô long vải', 'tea', 30000.00, NULL, 'https://i.pinimg.com/236x/64/58/68/645868c590ceb05b000b4532b1504a10.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (266, 12, 'Chanh tươi', 'juice', 30000.00, NULL, 'https://i.pinimg.com/736x/dc/97/ec/dc97ec248783aed051a0a3b2ea49e71c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (267, 12, 'Chanh leo', 'juice', 30000.00, NULL, 'https://i.pinimg.com/236x/f6/e7/24/f6e724d53926c8e7ff759a79e5a573f1.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (268, 12, 'Cam chanh dây', 'juice', 30000.00, NULL, 'https://i.pinimg.com/236x/14/62/c8/1462c83a29afebcef20e723b36b5a357.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (269, 13, 'Nâu (nóng, đá)', 'coffee', 20000.00, NULL, 'https://i.pinimg.com/474x/22/d2/ee/22d2eeda1641bb3ea6f5ca2b1c64a582.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (270, 13, 'Đen (nóng, đá)', 'coffee', 20000.00, NULL, 'https://i.pinimg.com/236x/d9/85/32/d98532a995c8410bc3284122d8d70e68.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (271, 13, 'Bạc xỉu', 'coffee', 20000.00, NULL, 'https://i.pinimg.com/236x/b8/57/9f/b8579f85244d22bd8252bcbc8869145e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (272, 13, 'Lipton dâu', 'tea', 20000.00, NULL, 'https://i.pinimg.com/236x/5a/1b/a8/5a1ba8fbc858b89daf193f3811aca88e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (273, 13, 'Lipton đào', 'tea', 20000.00, NULL, 'https://i.pinimg.com/236x/44/05/02/4405022619bb02e85bd1956e5b1eceab.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (274, 13, 'Lipton bạc hà', 'tea', 20000.00, NULL, 'https://i.pinimg.com/236x/9c/ca/db/9ccadbd7274c80241aa994e9346abe1d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (275, 13, 'Trà thái', 'tea', 20000.00, NULL, 'https://i.pinimg.com/236x/01/16/5e/01165ecaf8a8a7691f6c3724ee05e17a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (276, 13, 'Trà gừng', 'tea', 20000.00, NULL, 'https://i.pinimg.com/236x/4c/83/1f/4c831f6ac4fc50199f6a80e645896789.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (277, 13, 'Mơ muối', 'tea', 20000.00, NULL, 'https://i.pinimg.com/474x/2a/6f/98/2a6f989bc7b6d8c6e6c39f924714b682.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (278, 13, 'Sinh tố bơ', 'smoothie', 35000.00, NULL, 'https://i.pinimg.com/236x/6b/fb/94/6bfb942d419b4d2e75ceb840fdd4fab2.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (279, 13, 'Sinh tố xoài', 'smoothie', 30000.00, NULL, 'https://i.pinimg.com/236x/0d/7c/1d/0d7c1db1f234b14215f78b0023c3b634.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (280, 13, 'Sinh tố mãng cầu', 'smoothie', 35000.00, NULL, 'https://i.pinimg.com/236x/e0/39/a4/e039a420623a954c94ee74f83bf85b3a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (281, 13, 'Sinh tố dưa hấu', 'smoothie', 30000.00, NULL, 'https://i.pinimg.com/236x/41/43/a4/4143a466e4bac94a4d6c344dac91b1bf.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (282, 13, 'Chanh tươi', 'juice', 30000.00, NULL, 'https://i.pinimg.com/474x/0e/06/37/0e0637bcbcffc6ed56caaca3f192fefc.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (283, 13, 'Chanh leo', 'juice', 30000.00, NULL, 'https://i.pinimg.com/236x/f5/fc/68/f5fc686c7f28adfb11a3ebd87f969450.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (284, 14, 'Trà xoài', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/36/21/7a/36217a8a278aa995de7b3cf18f59940c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (285, 14, 'Trà đào cam sả', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/20/56/44/205644e9c3334aefb25f107e30498b21.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (286, 14, 'Trà đào sữa', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/0b/80/07/0b80078c6f01aa7d6cbe7c48f2b8c0ed.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (287, 14, 'Trà táo bạc hà', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/1f/c4/33/1fc433396ee0eef3f84beaeab167859a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (288, 14, 'Trà dưa hấu', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/fa/1e/98/fa1e98d0da4763d2163adf3fe2c96b7f.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (289, 14, 'Trà gừng', 'tea', 25000.00, NULL, 'https://i.pinimg.com/236x/3c/5a/9c/3c5a9cd37ed5619a7ba4758a8423ba86.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (290, 14, 'Trà quế (ly)', 'tea', 25000.00, NULL, 'https://i.pinimg.com/236x/30/76/6b/30766b27a5c723a874daca32bc27fa54.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (291, 14, 'Nước chanh tươi', 'juice', 25000.00, NULL, 'https://i.pinimg.com/236x/7d/10/fb/7d10fbd7e8b3d819f3c976e68c8335cc.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (292, 14, 'Nước ép dứa', 'juice', 30000.00, NULL, 'https://i.pinimg.com/236x/bb/f0/7f/bbf07f3233d6777f8d6917a61c69585c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (293, 14, 'Nước chanh leo', 'juice', 30000.00, NULL, 'https://i.pinimg.com/236x/ba/2e/46/ba2e465d76fb5978044a47091710b162.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (294, 14, 'Nước dưa hấu', 'juice', 30000.00, NULL, 'https://i.pinimg.com/236x/ba/33/13/ba3313b3293dde7411d6a4ac2e613df6.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (295, 14, 'Nước ép cam', 'juice', 25000.00, NULL, 'https://i.pinimg.com/236x/19/85/1e/19851e6b0bbdb1e7cd391f652dfce0ce.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (296, 14, 'Nước ép cà rốt', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/df/4a/bf/df4abfa3b29a20f0b1456160322ac7af.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (297, 14, 'Nước ép táo', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/90/ba/d5/90bad50e348db5ecebb903273635dde5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (298, 15, 'Đen Hà Nội', 'coffee', 33000.00, NULL, 'https://i.pinimg.com/236x/bc/0c/ff/bc0cffc8b21c24b4b571e98b9ab5da12.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (299, 15, 'Short Black (Espresso)', 'coffee', 44000.00, NULL, 'https://i.pinimg.com/236x/52/42/3a/52423a26bf39cd858fa70e117d1db037.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (300, 15, 'Long Black (Americano)', 'coffee', 44000.00, NULL, 'https://i.pinimg.com/236x/1b/52/7b/1b527b7c283c07adf2658afa2609b3ee.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (301, 15, 'Đen phin truyền thống', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/236x/ca/31/2e/ca312e0cb322ac0526092e06414f92e2.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (302, 15, 'Coldbrew', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/236x/0d/10/8f/0d108f58b6812f5cbd016208249283cf.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (303, 15, 'V60', 'coffee', 66000.00, NULL, 'https://i.pinimg.com/236x/39/03/dd/3903dd165740c18c1163bb2d2d69794b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (304, 15, 'Cappuccino', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/236x/45/38/10/453810958154922d419b4afb3ffda0c5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (305, 15, 'Trà bá tước', 'tea', 33000.00, NULL, 'https://i.pinimg.com/236x/ad/c6/71/adc6716e8bbe2aa51a8e154c1ee6184e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (306, 15, 'Trà hoa cúc mật ong nóng', 'tea', 44000.00, NULL, 'https://i.pinimg.com/236x/3e/77/f8/3e77f8970c20a47ad8d6c71abddbbb5d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (307, 15, 'Trà Hibiscus', 'tea', 55000.00, NULL, 'https://i.pinimg.com/474x/1b/d0/3b/1bd03b1c168b6efe3ff7f7b7bb9f4b63.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (308, 15, 'Trà Cascara', 'tea', 55000.00, NULL, 'https://i.pinimg.com/236x/3f/1e/5e/3f1e5e4d2cef9e1d53bd4c20d0c64f82.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (309, 15, 'Trà xoài lạc tiên', 'tea', 66000.00, NULL, 'https://i.pinimg.com/236x/23/51/05/2351051c684310421c2e83e5c50e9e48.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (310, 15, 'Trà mận dâu chanh vàng', 'tea', 66000.00, NULL, 'https://i.pinimg.com/236x/af/b8/e8/afb8e8fc6ff49b206267bf40ea5edf5a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (311, 15, 'Matcha Latte', 'tea', 66000.00, NULL, 'https://i.pinimg.com/236x/4b/7c/ef/4b7cefeb3f8f3e89f95a980f60a950cd.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (312, 15, 'Ép cam', 'juice', 55000.00, NULL, 'https://i.pinimg.com/236x/74/bc/bb/74bcbba551d77e9e5c529e8664e26b88.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (313, 16, 'Đen', 'coffee', 39000.00, NULL, 'https://i.pinimg.com/236x/7e/eb/90/7eeb9093566f99b6899fbd1afc5aef14.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (314, 16, 'Nâu', 'coffee', 39000.00, NULL, 'https://i.pinimg.com/236x/6c/f3/a9/6cf3a953221cd64a0bb81ebf264a4864.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (315, 16, 'Bạc xỉu', 'coffee', 41000.00, NULL, 'https://i.pinimg.com/236x/86/fb/4b/86fb4b85d1d591407e0727cb6bd628e9.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (316, 16, 'Sữa đá Sài Gòn', 'coffee', 41000.00, NULL, 'https://i.pinimg.com/236x/8b/80/16/8b801661a08737fd4290c08b9e6d6408.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (317, 16, 'Nâu kem', 'coffee', 49000.00, NULL, 'https://i.pinimg.com/236x/36/7e/c4/367ec49e285250e1efc725f91e8ca8ea.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (318, 16, 'Vina-Cano', 'coffee', 45000.00, NULL, 'https://i.pinimg.com/236x/2d/8f/e6/2d8fe67c81795a31effdf60d2f8b037f.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (319, 16, 'Vina-Cappuccino', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/236x/48/68/b2/4868b24a515324558464a8ebe7408f6d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (320, 16, 'Nâu phố', 'coffee', 45000.00, NULL, 'https://i.pinimg.com/236x/12/aa/0e/12aa0e8998a0fec8b6ab9572e5093b1c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (321, 16, 'Bạc xỉu phố', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/236x/4b/d4/12/4bd412ce456163195698fd090ff2020d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (322, 16, 'Cà phê phố kem kem', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/236x/9d/3b/86/9d3b8686697466be53fe38d945d32e78.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (323, 16, 'Trà bá tước', 'tea', 45000.00, NULL, 'https://i.pinimg.com/236x/84/24/55/8424557b7fbd8a1df84d08967924c830.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (324, 16, 'Tắc chanh leo', 'tea', 45000.00, NULL, 'https://i.pinimg.com/236x/09/e9/25/09e92533e559c78d1291df34056774f5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (325, 16, 'Xanh sữa', 'tea', 55000.00, NULL, 'https://i.pinimg.com/236x/33/f2/60/33f26090e2fed261c456265422147ffa.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (326, 16, 'Đen sữa', 'tea', 55000.00, NULL, 'https://i.pinimg.com/236x/10/57/29/105729cf8a60b75a0771d176309d5880.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (327, 16, 'Ấm trà xanh', 'tea', 45000.00, NULL, 'https://i.pinimg.com/236x/47/27/eb/4727eb25d368e75b55cf0c7957db76bc.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (328, 17, 'Cà phê đen', 'coffee', 18000.00, NULL, 'https://i.pinimg.com/736x/40/a2/f8/40a2f8fa1abec9a2ed41bb7dc37e38c0.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (329, 17, 'Cà phê sữa (nâu)', 'coffee', 20000.00, NULL, 'https://i.pinimg.com/236x/d6/37/33/d63733490f1b078fd201a7fbaae1510e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (330, 17, 'Bạc xỉu', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/236x/13/07/41/13074184c40239746c05d9f7ca01ae35.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (331, 17, 'Cà phê cốt dừa', 'coffee', 40000.00, NULL, 'https://i.pinimg.com/236x/b9/be/f8/b9bef8468cf9b7bebc637362970724e9.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (332, 17, 'Trà đào', 'tea', 30000.00, NULL, 'https://i.pinimg.com/236x/df/98/1b/df981b2dbcbe675b137d19f3337c2804.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (333, 17, 'Trà hoa cúc mật ong', 'tea', 30000.00, NULL, 'https://i.pinimg.com/236x/08/52/ae/0852ae2eadf59d497821c5df3fbf4936.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (334, 17, 'Trà bá tước', 'tea', 30000.00, NULL, 'https://i.pinimg.com/236x/4e/8a/fc/4e8afc0a57aac61c9da4633bde252b55.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (335, 17, 'Trà táo quế', 'tea', 50000.00, NULL, 'https://i.pinimg.com/236x/e2/21/9d/e2219d65b07a051a00cc15bff63599b5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (336, 17, 'Nước ép Táo', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/f6/90/59/f69059b44f9a0b78440029f143f343a2.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (337, 17, 'Nước ép Dứa', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/60/5a/c8/605ac8531c4019a9f6da9c9b5168ab33.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (338, 17, 'Nước ép Ổi', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/3f/d6/0c/3fd60c7b83acf5a2c6f91b17ffb88d96.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (339, 17, 'Sinh tố xoài', 'smoothie', 35000.00, NULL, 'https://i.pinimg.com/236x/5d/f3/e2/5df3e241f8a8bf2ee68728f963f1215b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (340, 17, 'Sinh tố bơ', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/18/d9/bc/18d9bc1f47a48120ab55448f983996c9.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (341, 17, 'Sinh tố mãng cầu', 'smoothie', 35000.00, NULL, 'https://i.pinimg.com/236x/d1/f5/66/d1f566c5d20a5da7234f48c0a48bec72.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (342, 17, 'Sinh tố chanh leo', 'smoothie', 35000.00, NULL, 'https://i.pinimg.com/236x/cd/d2/7b/cdd27b42715da31170c4cf8d90ffb877.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (343, 18, 'Cà phê đen', 'coffee', 25000.00, NULL, 'https://i.pinimg.com/474x/eb/6e/e9/eb6ee928f4a4c32311ee9453e7d0e9a6.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (344, 18, 'Cà phê nâu', 'coffee', 25000.00, NULL, 'https://i.pinimg.com/236x/7f/98/92/7f98920e7c427ed9bd016003ddf27c57.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (345, 18, 'Americano', 'coffee', 25000.00, NULL, 'https://i.pinimg.com/236x/cb/48/db/cb48db04009801523739569e0f33cfc3.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (346, 18, 'Bạc xỉu', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/236x/0e/a2/1b/0ea21b831c95e90bb1b1b1799ba6b768.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (347, 18, 'Cà phê cốt dừa', 'coffee', 35000.00, NULL, 'https://i.pinimg.com/236x/34/01/ca/3401ca0f8503d29d98bf52d132416112.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (348, 18, 'Cà phê kem trứng', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/236x/45/0c/be/450cbe39ba158f327c93125bcb592324.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (349, 18, 'Cà phê muối', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/236x/55/2f/fb/552ffb701b066f43c68e6882dc7e9c50.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (350, 18, 'Nước ép dứa', 'juice', 30000.00, NULL, 'https://i.pinimg.com/236x/4e/83/51/4e8351b0660d16c0b61e97ddda6ced56.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (351, 18, 'Nước ép dưa hấu', 'juice', 30000.00, NULL, 'https://i.pinimg.com/236x/9a/21/a0/9a21a042f6f19cef0d1268e0e791808d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (352, 18, 'Nước ép cam', 'juice', 40000.00, NULL, 'https://i.pinimg.com/236x/86/a8/3b/86a83be5a3ffecf7b91faaec23da1a76.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (353, 18, 'Nước ép táo', 'juice', 40000.00, NULL, 'https://i.pinimg.com/236x/c9/8d/99/c98d99e8e1e74e4ff35b24d3777387a6.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (354, 18, 'Nước ép cà rốt', 'juice', 25000.00, NULL, 'https://i.pinimg.com/236x/3d/03/ce/3d03ce5d90c54a8577708dbb695947c7.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (355, 18, 'Nước ép ổi', 'juice', 30000.00, NULL, 'https://i.pinimg.com/236x/77/e2/6a/77e26a7f33906b052ede6fe748e188f4.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (356, 18, 'Trà đào cam sả', 'tea', 35000.00, NULL, 'https://i.pinimg.com/236x/8f/80/a5/8f80a5d5f3fdbe3202d2d9e2bd9d5cae.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (357, 18, 'Trà xoài', 'tea', 25000.00, NULL, 'https://i.pinimg.com/236x/63/74/1f/63741fa24744d9f8be42310dc6ccc301.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (358, 19, 'Chanh tươi tuyết', 'smoothie', 35000.00, NULL, 'https://i.pinimg.com/736x/e6/a6/a8/e6a6a86930d9fe3dc0c94505091eef0d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (359, 19, 'Sinh tố Chuối Ca Cao', 'smoothie', 40000.00, NULL, 'https://i.pinimg.com/236x/f0/35/cc/f035cc256ac548d2ee07d1dc997d5f0b.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (360, 19, 'Cốt dừa Cà phê', 'smoothie', 40000.00, NULL, 'https://i.pinimg.com/236x/6b/79/3a/6b793ac72b717cb22c6c70f530cf862d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (361, 19, 'Cốt dừa Ca Cao', 'smoothie', 40000.00, NULL, 'https://i.pinimg.com/236x/34/01/ca/3401ca0f8503d29d98bf52d132416112.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (362, 19, 'Sinh tố Dừa Đậu đỏ', 'smoothie', 42000.00, NULL, 'https://i.pinimg.com/236x/0c/1c/b8/0c1cb871d6e6e9d09e3b266b2b96e091.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (363, 19, 'Freeze Việt quất', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/5c/99/04/5c99047b3cada1a95b0fd9c54806a81a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (364, 19, 'Freeze Chanh leo', 'smoothie', 45000.00, NULL, 'https://i.pinimg.com/236x/b5/8c/9a/b58c9a0e97526fd7d8d5bb718f0cfc5c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (365, 19, 'Freeze Cà phê', 'smoothie', 40000.00, NULL, 'https://i.pinimg.com/236x/72/bd/9f/72bd9ff176d09d1cf678d28e962c5c3e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (366, 19, 'Sinh tố Dưa hấu', 'smoothie', 35000.00, NULL, 'https://i.pinimg.com/236x/9b/ab/61/9bab61d3fb5da80e50bb127e975665bc.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (367, 19, 'Nước ép Táo', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/51/86/f4/5186f4f62c9bcbc1ff533da51258cb11.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (368, 19, 'Nước ép Ổi', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/40/dd/4b/40dd4bd266e1e3301691a4f975c779f8.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (369, 19, 'Nước ép Lê', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/47/77/c4/4777c4fd0bb6b0ffe449dd1f04b14edb.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (370, 19, 'Nước ép Dưa Hấu', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/e9/39/55/e939559733bf61b97a78c7a55bb10925.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (371, 19, 'Nước ép Cà Rốt', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/99/1e/d4/991ed4024e610d048f814afcb543f0af.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (372, 19, 'Nước ép Dứa', 'juice', 35000.00, NULL, 'https://i.pinimg.com/236x/ef/ae/a4/efaea46cfe513f71ebed22bfe57338c5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (373, 20, 'Espresso', 'coffee', 30000.00, NULL, 'https://i.pinimg.com/236x/c1/2e/34/c12e344b0dc9b687b4e4f8dd04996877.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (374, 20, 'Cappuccino', 'coffee', 45000.00, NULL, 'https://i.pinimg.com/236x/45/38/10/453810958154922d419b4afb3ffda0c5.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (375, 20, 'Latte', 'coffee', 50000.00, NULL, 'https://i.pinimg.com/236x/b8/4c/9d/b84c9db0910aa8247d79b69a4ecd1438.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (376, 20, 'Mocha', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/236x/70/0f/11/700f116df1ff53ecc03ca6aa75404ee8.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (377, 20, 'Caramel Macchiato', 'coffee', 55000.00, NULL, 'https://i.pinimg.com/236x/da/1c/f5/da1cf52f55b7b4adcac8dbff75a7a223.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (378, 20, 'Cà phê socola', 'coffee', 40000.00, NULL, 'https://i.pinimg.com/236x/c8/4b/02/c84b028dd240b202b8df093bec8757bb.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (379, 20, 'Cà phê caramel', 'coffee', 40000.00, NULL, 'https://i.pinimg.com/236x/97/aa/d6/97aad62570f2080a4390a3a7d3cfcc4c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (380, 20, 'Trà cam quế mật ong', 'tea', 49000.00, NULL, 'https://i.pinimg.com/236x/ef/72/47/ef7247307089f3b5bb3d459efd7175f7.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (381, 20, 'Trà sữa gạo lá nếp', 'tea', 55000.00, NULL, 'https://i.pinimg.com/236x/9c/84/8e/9c848ed2eb2b43fd82147879750f80d2.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (382, 20, 'Trà đào cam sả', 'tea', 55000.00, NULL, 'https://i.pinimg.com/236x/2f/87/93/2f8793c44c0649eabd20a616ac512b0f.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (383, 20, 'Trà kem dâu', 'tea', 55000.00, NULL, 'https://i.pinimg.com/236x/1b/e9/b5/1be9b52f5a063cabd71ab0fe44b84e2d.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (384, 20, 'Sinh tố bơ', 'smoothie', 55000.00, NULL, 'https://i.pinimg.com/236x/aa/de/4f/aade4f957cd9e96918d9e35b7aee926a.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (385, 20, 'Sinh tố xoài', 'smoothie', 55000.00, NULL, 'https://i.pinimg.com/236x/a2/a3/a0/a2a3a063904409bf93d401d914f0b638.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (386, 20, 'Sinh tố mãng cầu', 'smoothie', 55000.00, NULL, 'https://i.pinimg.com/474x/10/16/be/1016be4926cb8b8bdb2a0b608fb5a3ae.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (387, 20, 'Nước ép dưa lưới hạt chia', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/3b/35/c6/3b35c688c0c30d62f48dc9b38d4209ad.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (388, 20, 'Nước ép cóc dứa', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/04/c1/6c/04c16c61f64b50b9203cbc3241e87c0f.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (389, 20, 'Nước ép đào', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/c4/c2/ac/c4c2ac2388597e8752191d42114bce9e.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (390, 20, 'Nước ép dứa hấu', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/ab/c1/56/abc15600e3514b8a780466d14bec1658.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');
+INSERT INTO drinks (id, cafeId, name, type, price, description, image_url, is_available, created_at, updated_at) VALUES (391, 20, 'Nước ép chanh leo', 'juice', 45000.00, NULL, 'https://i.pinimg.com/236x/a5/1c/59/a51c598271de9239f832a582d82c150c.jpg', true, '2024-12-11 22:15:21.468128', '2024-12-11 22:15:21.468128');

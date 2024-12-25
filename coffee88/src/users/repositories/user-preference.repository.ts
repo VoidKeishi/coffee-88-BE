@@ -31,4 +31,34 @@ export class UserPreferenceRepository {
       where: { user: { id: user.id } },
     });
   }
+
+  async getUserFavouriteCafes(user: User) {
+    const userPreference = await this.userPreferenceRepository.findOne({
+      where: { user: { id: user.id } },
+    });
+    return userPreference.favouriteCafes;
+  }
+
+  async addFavouriteCafe(
+    favouriteCafe: { userId: number; cafeId: number },
+    foundUser: User
+  ): Promise<UserPreferences> {
+    const userPreference = await this.findOneUserPreference(foundUser);
+    if (!userPreference.favouriteCafes.includes(favouriteCafe.cafeId)) {
+      userPreference.favouriteCafes.push(favouriteCafe.cafeId);
+    }
+    return await this.userPreferenceRepository.save(userPreference);
+  }
+  
+  async removeFavouriteCafe(
+    favouriteCafe: { userId: number; cafeId: number },
+    foundUser: User
+  ): Promise<UserPreferences> {
+    const userPreference = await this.findOneUserPreference(foundUser);
+    userPreference.favouriteCafes = userPreference.favouriteCafes.filter(
+      cafeId => cafeId !== favouriteCafe.cafeId
+    );
+    return await this.userPreferenceRepository.save(userPreference);
+  }
+  
 }

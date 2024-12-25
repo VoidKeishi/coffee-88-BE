@@ -36,6 +36,8 @@ export class CafesService {
 
   private toDto(cafe: Cafe): CafeDto {
     const { created_at, updated_at, ...dto } = cafe;
-    return dto;
+    return dto as CafeDto;
   }
+
+  
 }

@@ -22,7 +22,7 @@ CREATE TABLE cafes (
 
 CREATE TABLE drinks (
     id SERIAL PRIMARY KEY,
-    cafe_id INTEGER NOT NULL REFERENCES cafes(id) ON DELETE CASCADE, 
+    cafeId INTEGER NOT NULL REFERENCES cafes(id) ON DELETE CASCADE, 
     name VARCHAR(100) NOT NULL, 
     type drink_type NOT NULL,
     price DECIMAL(10, 2) NOT NULL, 

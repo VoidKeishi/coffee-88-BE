@@ -12,4 +12,5 @@ export class CafeDto {
   opening_time: string;
   closing_time: string;
   distance_from_sun: number;
+  drinks: Drink[];
 }

@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, ManyToOne, Index } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn,JoinColumn, ManyToOne, Index } from 'typeorm';
 import { Cafe } from './cafe.entity';
 import { DRINK_TYPE } from './enums';
 

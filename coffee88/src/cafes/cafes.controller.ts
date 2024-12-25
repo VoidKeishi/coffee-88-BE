@@ -20,4 +20,10 @@ export class CafesController {
   findOne(@Param('id') id: string): Promise<CafeDto> {
     return this.cafesService.findOne(+id);
   }
+
+  @Get('/search/:keyword')
+  search(@Param('keyword') keyword: string): Promise<CafeDto[]> {
+    return this.cafesService.search(keyword);
+  }
+
 }

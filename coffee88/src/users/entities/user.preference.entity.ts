@@ -22,5 +22,8 @@ export class UserPreferences {
 
   @Column({ type: 'enum', enum: PRICE_RANGE, name: 'priceRange' })
   price_range: PRICE_RANGE;
+
+  @Column('int', { array: true, default: [] })
+  favouriteCafes: number[];
 }
 
